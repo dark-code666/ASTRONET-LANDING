@@ -12,7 +12,7 @@ export default function CTA({
 }: CTAProps) {
   return (
     <section id="contact" className="bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-0 sm:py-20">
         <div className="relative overflow-hidden rounded-3xl border border-zinc-900/10 bg-zinc-950 px-6 py-10 text-white sm:px-10 sm:py-12">
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(163,230,53,0.25),transparent_55%),radial-gradient(circle_at_80%_70%,rgba(99,102,241,0.20),transparent_55%)]" />
 

@@ -1,4 +1,4 @@
-#root {
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,37 @@
 
 .read-the-docs {
   color: #888;
+}*/
+
+
+/* Eliminamos las restricciones de ancho y centrado que trae Vite por defecto */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Scroll suave para la navegación entre secciones */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Opcional: Personalización de la barra de desplazamiento (Scrollbar) 
+   para que encaje con el modo oscuro */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f23;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d2d30;
 }

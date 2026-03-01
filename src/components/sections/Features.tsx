@@ -10,7 +10,7 @@ export type FeaturesProps = {
 }
 
 export default function Features({
-  title = 'What we do',
+  title = 'What we do ?',
   description = 'A focused toolkit for modern SaaS and internal products.',
   items = [
     {
@@ -34,10 +34,10 @@ export default function Features({
     <section id="services" className="bg-white">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
         <div className="max-w-2xl">
-          <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 sm:text-3xl">
+          <h2 className="text-2xl font-bold tracking-tighter text-zinc-900 sm:text-3xl">
             {title}
           </h2>
-          <p className="mt-3 text-base leading-7 text-zinc-600 sm:text-lg">
+          <p className="mt-2  text-sm leading-7 text-zinc-600 sm:text-">
             {description}
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function Features({
           {items.map((f) => (
             <div
               key={f.title}
-              className="rounded-2xl border border-zinc-900/10 bg-zinc-50 p-6"
+              className="rounded-2xl border border-zinc-900/10 bg-zinc-50 p-3 py-10"
             >
               <div className="flex items-center justify-between">
                 <div className="text-sm font-semibold text-zinc-950">
