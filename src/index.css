@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@theme {
+  /* Definimos el negro profundo*/
+  --color-background: #050505;
+  --color-primary: #ffffff;
+  --color-zinc-950: #050505;
+  
+  /* Tipografía: Usamos Inter o System para ese look limpio */
+  --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  background-color: #050505;
+  color: #ffffff;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Evitamos el scroll horizontal accidental */
+  overflow-x: hidden; 
+}
+
+/* Selección de texto estilo neón sutil */
+::selection {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
