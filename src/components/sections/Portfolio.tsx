@@ -16,7 +16,8 @@ const projects = [
 ];
 
 export default function PortfolioCarousel() {
-  const swiperRef = useRef<SwiperType>();
+  // SwiperType is optional since the ref starts as null
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <section className="w-full bg-[#0d1110] py-24 overflow-hidden">

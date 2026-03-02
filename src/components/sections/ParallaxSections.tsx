@@ -1,7 +1,7 @@
-import SectionOne from './parallax/SectionOne';
-import SectionTwo from './parallax/SectionTwo';
-import SectionThree from './parallax/SectionThree';
-import SectionFour from './parallax/SectionFour';
+import SectionOne from './Parallax/SectionOne';
+import SectionTwo from './Parallax/SectionTwo';
+import SectionThree from './Parallax/SectionThree';
+import SectionFour from './Parallax/SectionFour';
 
 export default function ParallaxSections() {
   return (
