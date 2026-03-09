@@ -59,7 +59,6 @@ import { Mail, MessageCircle, Calendar } from 'lucide-react';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-
 const scrollToParallax = (sectionNumber: number) => {
   const container = document.getElementById('parallax-container');
   
@@ -79,15 +78,15 @@ const scrollToParallax = (sectionNumber: number) => {
 };
 
   return (
-    <footer className="w-full bg-[#0d1110] text-white pt-20 pb-10">
+    <footer className="w-full bg-white text-zinc-950 pt-20 pb-10 dark:bg-[#0d1110] dark:text-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         
         {/* BARRA DE CONTACTO SUPERIOR */}
-        <div className="flex flex-col lg:flex-row items-center justify-between bg-white/5 border border-white/10 rounded-2xl p-6 lg:p-8 mb-20 gap-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between bg-zinc-50 border border-zinc-900/10 rounded-2xl p-6 lg:p-8 mb-20 gap-8 dark:bg-white/5 dark:border-white/10">
           <div className="flex flex-col items-center lg:items-start">
             <div className="flex items-center gap-1 mb-1">
               <span className="text-[#A3FF00] font-black text-2xl">A</span>
-              <span className="text-white font-black text-2xl tracking-tighter">N</span>
+              <span className="text-zinc-950 dark:text-white font-black text-2xl tracking-tighter">N</span>
             </div>
             <p className="text-[10px] font-black tracking-[0.3em] uppercase opacity-80">
               Astronet
@@ -97,34 +96,34 @@ const scrollToParallax = (sectionNumber: number) => {
           <div className="flex flex-wrap justify-center gap-10">
             {/* Redirección a WhatsApp */}
             <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-white/5 group-hover:bg-[#A3FF00]/10 transition-colors">
-                <MessageCircle size={20} className="text-white group-hover:text-[#A3FF00]" />
+              <div className="p-3 rounded-xl bg-zinc-950/5 group-hover:bg-[#A3FF00]/10 transition-colors dark:bg-white/5">
+                <MessageCircle size={20} className="text-zinc-950 group-hover:text-[#A3FF00] dark:text-white" />
               </div>
               <div>
                 <p className="text-[9px] font-black tracking-widest text-zinc-500 uppercase">WhatsApp</p>
-                <p className="text-sm font-bold uppercase tracking-tight">ASTRONET</p>
+                <p className="text-sm font-bold uppercase tracking-tight text-zinc-950 dark:text-white">ASTRONET</p>
               </div>
             </a>
 
             {/* Redirección a Email */}
             <a href="mailto:hello@harryking.studio" className="group flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-white/5 group-hover:bg-[#A3FF00]/10 transition-colors">
-                <Mail size={20} className="text-white group-hover:text-[#A3FF00]" />
+              <div className="p-3 rounded-xl bg-zinc-950/5 group-hover:bg-[#A3FF00]/10 transition-colors dark:bg-white/5">
+                <Mail size={20} className="text-zinc-950 group-hover:text-[#A3FF00] dark:text-white" />
               </div>
               <div>
                 <p className="text-[9px] font-black tracking-widest text-zinc-500 uppercase">Email</p>
-                <p className="text-sm font-bold uppercase tracking-tight">ASTRONET@GMAIL.COM</p>
+                <p className="text-sm font-bold uppercase tracking-tight text-zinc-950 dark:text-white">ASTRONET@GMAIL.COM</p>
               </div>
             </a>
 
             {/* Redirección al CTA / Formulario de contacto */}
-            <a href="#contact" className="group flex items-center gap-4 border-l border-white/10 pl-10 hidden sm:flex">
-              <div className="p-3 rounded-xl bg-white/5 group-hover:bg-[#A3FF00]/10 transition-colors">
-                <Calendar size={20} className="text-white group-hover:text-[#A3FF00]" />
+            <a href="#contact" className="group flex items-center gap-4 border-l border-zinc-900/10 pl-10 hidden sm:flex dark:border-white/10">
+              <div className="p-3 rounded-xl bg-zinc-950/5 group-hover:bg-[#A3FF00]/10 transition-colors dark:bg-white/5">
+                <Calendar size={20} className="text-zinc-950 group-hover:text-[#A3FF00] dark:text-white" />
               </div>
               <div>
                 <p className="text-[9px] font-black tracking-widest text-zinc-500 uppercase">Schedule a call</p>
-                <p className="text-sm font-bold uppercase tracking-tight">START A PROJECT</p>
+                <p className="text-sm font-bold uppercase tracking-tight text-zinc-950 dark:text-white">START A PROJECT</p>
               </div>
             </a>
           </div>

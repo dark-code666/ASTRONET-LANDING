@@ -1,33 +1,57 @@
 import Button from '../ui/Button'
+import { Moon, Sun } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 
 export default function Navbar() {
+  const [isDark, setIsDark] = useState<boolean>(false)
+
+  useEffect(() => {
+    setIsDark(document.documentElement.classList.contains('dark'))
+  }, [])
+
+  const toggleTheme = () => {
+    const nextIsDark = !isDark
+    setIsDark(nextIsDark)
+
+    if (nextIsDark) {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme', 'light')
+    }
+  }
+
   return (
     <header className="fixed top-6 left-0 w-full z-50 px-4">
       <div className="mx-auto max-w-6xl">
-        <nav className="flex items-center justify-between bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-zinc-200/50">
+        <nav className="flex items-center justify-between bg-white/90 dark:bg-zinc-950/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-zinc-200/50 dark:border-white/10">
           
           {/* Logo a la izquierda */}
           <a href="/" className="flex items-center">
-            <span className="text-2xl font-black tracking-tighter text-zinc-950 uppercase leading-none">
-              AN<span className="text-zinc-400 font-light">′</span>
+            <span className="text-2xl font-black tracking-tighter text-zinc-950 dark:text-white uppercase leading-none">
+              AN<span className="text-zinc-400 dark:text-zinc-500 font-light">′</span>
             </span>
             
             <div className="leading-tight  ml-2">
-              <div className="text-sm font-semibold text-zinc-950">Astronet</div>
-              <div className="text-xs text-zinc-500">Software Development Studio</div>
+              <div className="text-sm font-semibold text-zinc-950 dark:text-white">Astronet</div>
+              <div className="text-xs text-zinc-500 dark:text-zinc-300">Software Development Studio</div>
             </div>
           </a>
 
           {/* Central*/}
           <div className="hidden md:flex items-center gap-10">
-            <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
+            <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               What we do
             </a>
-            <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
+            <a href="#outsourcing-vas" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+              Outsourcing and VAs
+            </a>
+            <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Case Studies
             </a>
-            <a href="#contact" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
+            <a href="#contact" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Contact
             </a>
           </div>
@@ -37,11 +61,20 @@ export default function Navbar() {
           {/* Menú y Botón - Derecha */}
           <div className="flex items-center gap-8">
             <button className="flex items-center gap-2 group cursor-pointer">
-              <span className="text-[11px] font-black uppercase tracking-widest text-zinc-900">Menu</span>
+              <span className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white">Menu</span>
               <div className="flex flex-col gap-1 w-6">
-                <span className="h-[2px] w-full bg-zinc-900 rounded-full"></span>
-                <span className="h-[2px] w-full bg-zinc-900 rounded-full"></span>
+                <span className="h-[2px] w-full bg-zinc-900 dark:bg-white rounded-full"></span>
+                <span className="h-[2px] w-full bg-zinc-900 dark:bg-white rounded-full"></span>
               </div>
+            </button>
+
+            <button
+              type="button"
+              onClick={toggleTheme}
+              className="grid size-11 place-items-center rounded-xl border border-zinc-200/70 bg-white/70 text-zinc-900 hover:bg-white active:bg-white/80 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+              aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+            >
+              {isDark ? <Sun size={18} /> : <Moon size={18} />}
             </button>
 
             

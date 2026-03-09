@@ -1,12 +1,12 @@
 export default function InfoSegment() {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white dark:bg-[#050505]">
       {/* 1. Sub-segmento de Testimonios  */}
-      <div className="mx-auto max-w-6xl w-full px-0 py-32">
+      <div className="mx-auto max-w-6xl w-full px-4 sm:px-6 py-20 sm:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           <div className="lg:col-span-4">
-            <h2 className="text-zinc-900 text-5xl font-serif leading-tight">
+            <h2 className="text-zinc-900 dark:text-white text-4xl sm:text-5xl font-serif leading-tight">
               What Our <br/> Clients Say.
             </h2>
           </div>
@@ -19,12 +19,12 @@ export default function InfoSegment() {
                 className="w-10 h-10 rounded-full grayscale" 
                 alt="Client Dan" 
               />
-              <p className="text-[11px] leading-relaxed font-medium text-zinc-500 italic">
+              <p className="text-[11px] leading-relaxed font-medium text-zinc-500 dark:text-white/70 italic">
                 "Harry is a talented designer, with flair and attention to detail. He's exceptionally easy to work with..."
               </p>
             </div>
-            <div className="border-t border-zinc-100 pt-4 ml-14">
-              <p className="text-[10px] font-black uppercase tracking-tighter text-zinc-900">Dan Johnson</p>
+            <div className="border-t border-zinc-100 dark:border-white/10 pt-4 ml-14">
+              <p className="text-[10px] font-black uppercase tracking-tighter text-zinc-900 dark:text-white">Dan Johnson</p>
               <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-zinc-400">CEO — THE MOVE CHANNEL</p>
             </div>
           </div>
@@ -36,12 +36,12 @@ export default function InfoSegment() {
                 className="w-10 h-10 rounded-full grayscale" 
                 alt="Client Louis" 
               />
-              <p className="text-[11px] leading-relaxed font-medium text-zinc-500 italic">
+              <p className="text-[11px] leading-relaxed font-medium text-zinc-500 dark:text-white/70 italic">
                 "Really listening is a bit of a rare skill nowadays... it was awesome to work with someone who actually delivers."
               </p>
             </div>
-            <div className="border-t border-zinc-100 pt-4 ml-14">
-              <p className="text-[10px] font-black uppercase tracking-tighter text-zinc-900">Louis Hatchwell</p>
+            <div className="border-t border-zinc-100 dark:border-white/10 pt-4 ml-14">
+              <p className="text-[10px] font-black uppercase tracking-tighter text-zinc-900 dark:text-white">Louis Hatchwell</p>
               <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-zinc-400">Content Creator / Athlete</p>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function InfoSegment() {
       </div>
 
       {/* Testimonio Unico*/}
-      <div className="mx-auto max-w-6xl w-full px-0 pb-32">
+      <div className="mx-auto max-w-6xl w-full px-4 sm:px-6 pb-20 sm:pb-32">
         <div className="relative bg-[#0d1110] rounded-[2.5rem] overflow-hidden grid grid-cols-1 lg:grid-cols-10 min-h-[550px]">
           
           <div className="lg:col-span-4 relative h-[400px] lg:h-auto">

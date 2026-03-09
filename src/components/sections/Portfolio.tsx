@@ -20,9 +20,9 @@ export default function PortfolioCarousel() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="w-full bg-[#0d1110] py-24 overflow-hidden">
+    <section className="w-full bg-white py-16 sm:py-24 overflow-hidden dark:bg-[#0d1110]">
       {/* CONTENEDOR DE TEXTO */}
-      <div className="mx-auto max-w-6xl w-full px-12 relative mb-16">
+      <div className="mx-auto max-w-6xl w-full px-4 sm:px-6 lg:px-12 relative mb-12 sm:mb-16">
         
         {/* FILA SUPERIOR: Label y Botón */}
         <div className="flex justify-between items-start mb-6">
@@ -33,14 +33,14 @@ export default function PortfolioCarousel() {
             </p>
           </div>
           
-          <button className="hidden md:block px-8 py-3 border border-white/20 text-white rounded-lg text-[9px] font-black uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all">
+          <button className="hidden md:block px-8 py-3 border border-zinc-900/20 text-zinc-950 rounded-lg text-[9px] font-black uppercase tracking-[0.2em] hover:bg-zinc-950 hover:text-white transition-all dark:border-white/20 dark:text-white dark:hover:bg-white dark:hover:text-black">
             VIEW LATEST WORK
           </button>
         </div>
 
         {/* TÍTULO Y FLECHA: Alineados */}
         <div className="flex justify-between items-end">
-          <h2 className="text-white text-3xl lg:text-6xl font-serif leading-tight tracking-tighter">
+          <h2 className="text-zinc-950 dark:text-white text-3xl lg:text-6xl font-serif leading-tight tracking-tighter">
             Website launches, collaborations & <br/> long-standing success stories.
           </h2>
 
