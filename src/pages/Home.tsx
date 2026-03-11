@@ -1,5 +1,3 @@
-import Footer from '../components/layout/Footer'
-import Navbar from '../components/layout/Navbar'
 import CTA from '../components/sections/CTA'
 import Features from '../components/sections/Features'
 import Hero from '../components/sections/Hero'
@@ -13,6 +11,7 @@ import OutsourcingVAs from '../components/sections/OutsourcingVAs'
 
 export default function Home() {
   return (
+    <>
     <div className="min-h-dvh bg-white text-zinc-950 dark:bg-[#050505] dark:text-white">
       <Navbar />
       <main>
@@ -26,8 +25,6 @@ export default function Home() {
         <InfoSegment />
         <Marquee />
         <CTA />
-      </main>
-      <Footer />
-    </div>
+    </>
   )
 }

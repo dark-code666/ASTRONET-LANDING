@@ -10,6 +10,20 @@
   
   /* Tipografía: Usamos Inter o System para ese look limpio */
   --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+
+   /* Cohete */
+   --animate-bounce-slow: bounce-custom 3s infinite ease-in-out;
+
+  /* Cohete */
+  @keyframes bounce-custom {
+    0%, 100% { 
+      transform: translateY(0) rotate(-45deg); 
+    }
+    50% { 
+      transform: translateY(-15px) rotate(-45deg); 
+    }
+  }
 }
 
 :root {
@@ -43,3 +57,4 @@ body {
 html {
   scroll-behavior: smooth;
 }
+

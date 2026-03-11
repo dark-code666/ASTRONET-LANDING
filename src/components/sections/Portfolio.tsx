@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
-
 import 'swiper/css';
+
 
 const projects = [
   { id: 1, title: 'Belleek Castle', cat: 'BOOKING WEBSITES', img: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800', url: '/belleek' },
@@ -71,7 +72,7 @@ export default function PortfolioCarousel() {
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id}>
-              <a href={project.url} className="group relative block aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-zinc-900 transition-all duration-500 hover:-translate-y-2">
+              <Link to={project.url} className="group relative block aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-zinc-900 transition-all duration-500 hover:-translate-y-2">
                 <img 
                   src={project.img} 
                   alt={project.title}
@@ -92,7 +93,7 @@ export default function PortfolioCarousel() {
                   </h4>
                   <div className="w-0 group-hover:w-full h-[2px] bg-[#A3FF00] transition-all duration-500" />
                 </div>
-              </a>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
