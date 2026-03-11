@@ -11,9 +11,9 @@ const LOGOS = [
 
 export default function LogoTicker() {
   return (
-    <section className="bg-white py-10 border-y-0 border-zinc-100">
-      <div className="container mx-auto px-6 mb-12 text-center">
-        <p className="text-[12px] font-black uppercase tracking-[0.3em] text-zinc-800">
+    <section className="bg-white py-10 border-y-0 border-zinc-100 dark:bg-[#050505]">
+      <div className="container mx-auto px-4 sm:px-6 mb-12 text-center">
+        <p className="text-[12px] font-black uppercase tracking-[0.3em] text-zinc-800 dark:text-white">
          With the best technologies        </p>
       </div>
 
@@ -35,7 +35,7 @@ export default function LogoTicker() {
                 className="h-8 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" 
               />
               {/* Texto en Junto a la imagen: */}
-              <span className="ml-4 text-xl font-bold text-zinc-400 grayscale">{logo.name}</span>
+              <span className="ml-4 text-xl font-bold text-zinc-400 grayscale dark:text-white/60">{logo.name}</span>
             </div>
           ))}
         </motion.div>

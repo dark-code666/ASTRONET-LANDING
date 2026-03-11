@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Definimos el negro profundo*/
   --color-background: #050505;
@@ -25,6 +27,12 @@
 }
 
 :root {
+  background-color: #ffffff;
+  color: #09090b;
+  color-scheme: light;
+}
+
+.dark {
   background-color: #050505;
   color: #ffffff;
   color-scheme: dark;
