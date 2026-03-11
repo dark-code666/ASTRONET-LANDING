@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function SectionOne() {
   // Estado para cambiar la imagen de la laptop al pasar el cursor por el texto
@@ -11,6 +12,7 @@ export default function SectionOne() {
       <div className="w-full px-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
         
         {/* BLOQUE DE TEXTO */}
+        <Link to="/whatwedo/Company-Websites">
         <div 
           className="group flex flex-col items-start cursor-default"
           onMouseEnter={() => setActiveImage(secondaryImage)}
@@ -37,11 +39,12 @@ export default function SectionOne() {
               </div>
             ))}
           </div>
-
-          <button className="px-10 py-4 bg-transparent border border-white/20 text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-[#A3FF00] hover:text-black transition-all transform group-hover:translate-x-6 duration-700">
+           
+           <button className="px-10 py-4 bg-transparent border border-white/20 text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-[#A3FF00] hover:text-black transition-all transform group-hover:translate-x-6 duration-700">
             Find out more
-          </button>
+           </button>
         </div>
+        </Link>
 
         {/* BLOQUE VISUAL: Laptop */}
         <div className="relative flex flex-col items-center">

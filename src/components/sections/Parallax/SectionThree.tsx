@@ -1,3 +1,4 @@
+import { Link } from 'lucide-react';
 import { useState } from 'react';
 
 export default function SectionThree() {
@@ -14,6 +15,7 @@ export default function SectionThree() {
       <div className="mx-auto max-w-6xl w-full px-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
         
         {/* BLOQUE DE TEXTO (IZQUIERDA) */}
+        <Link to="/whatwedo/Booking">
         <div 
           className="group cursor-default flex flex-col items-start"
           onMouseEnter={() => setActiveImage("/images/booking-2.png")}
@@ -43,6 +45,7 @@ export default function SectionThree() {
             Find out more
           </button>
         </div>
+        </Link >
 
         {/* BLOQUE VISUAL (DERECHA) */}
         <div className="relative flex justify-center lg:justify-end">

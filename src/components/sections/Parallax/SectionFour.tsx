@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function SectionFour() {
   
   const staticImage = "https://images.unsplash.com/photo-1722503583817-ee834e31ce4b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
@@ -19,6 +21,7 @@ export default function SectionFour() {
         </div>
 
         {/* BLOQUE DE TEXTO*/}
+         <Link to="/whatwedo/Community-Platforms">
         <div className="group cursor-default flex flex-col items-start">
       
           <p className="text-[#A3FF00] font-black text-[10px] tracking-[0.4em] mb-4 transition-transform duration-500 group-hover:-translate-x-4">
@@ -45,11 +48,12 @@ export default function SectionFour() {
               </div>
             ))}
           </div>
-
           <button className="px-10 py-4 border border-zinc-900 text-zinc-900 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-[#A3FF00] hover:text-black hover:border-[#A3FF00] transition-all group-hover:-translate-x-8">
             Find out more
           </button>
+
         </div>
+        </Link>
 
       </div>
     </section>

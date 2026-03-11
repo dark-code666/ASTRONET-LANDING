@@ -46,6 +46,10 @@ export default function Navbar() {
 
           {/* Central*/}
           <div className="hidden md:flex items-center gap-10">
+            <Link to="/whatwedo" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
+              What we do
+            </Link>
+            <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
             <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               What we do
             </a>

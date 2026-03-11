@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'; 
+
 
 export default function SectionTwo() {
   // Imágenestemporales 
@@ -43,6 +45,7 @@ export default function SectionTwo() {
         </div>
 
         {/* LADO DERECHO */}
+        <Link to="/whatwedo/eCommerce">
         <div 
           className="group cursor-default flex flex-col items-start"
           onMouseEnter={() => setActiveImage(imgPhone2)}
@@ -69,10 +72,12 @@ export default function SectionTwo() {
             ))}
           </div>
 
+
           <button className="px-10 py-4 border border-white/20 text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-[#A3FF00] hover:text-black transition-all group-hover:-translate-x-8">
             Find out more
           </button>
         </div>
+        </Link>
 
       </div>
     </section>
