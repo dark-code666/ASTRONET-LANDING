@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom';
 import Button from '../ui/Button'
-import { Moon, Sun } from 'lucide-react'
+import { Import, Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import Menu from './Menu/Menu';
+import LineTransition from './Menu/LineTransition'
 
 
 export default function Navbar() {
   const [isDark, setIsDark] = useState<boolean>(false)
+  const [isOpen, setIsOpen] = useState(false) 
+  const [showSegment, setShowSegment] = useState(false)
 
   useEffect(() => {
     setIsDark(document.documentElement.classList.contains('dark'))
@@ -24,10 +29,36 @@ export default function Navbar() {
     }
   }
 
+  const handleMenuToggle = () => {
+    if (!isOpen) {
+      setIsOpen(true);
+      setTimeout(() => setShowSegment(true), 600);
+    } else {
+      setShowSegment(false);
+      setTimeout(() => setIsOpen(false), 300);
+    }
+  }
+
+const closeMenuOnNavigate = () => {
+    if (isOpen) {
+      setShowSegment(false); 
+      setTimeout(() => {
+        setIsOpen(false); 
+      }, 400); 
+    }
+  };
+
+
   return (
+    <>
     <header className="fixed top-6 left-0 w-full z-50 px-4">
-      <div className="mx-auto max-w-6xl">
-        <nav className="flex items-center justify-between bg-white/90 dark:bg-zinc-950/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-zinc-200/50 dark:border-white/10">
+      <div className="mx-auto max-w-6xl" >
+        <nav 
+        onClick={(e) => {
+              if ((e.target as HTMLElement).closest('a')) {
+                closeMenuOnNavigate();
+              } }} 
+        className="flex items-center justify-between bg-white/90 dark:bg-zinc-950/80 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-zinc-200/50 dark:border-white/10" >
           
           {/* Logo a la izquierda */}
           <Link to="/" className="flex items-center">
@@ -40,15 +71,17 @@ export default function Navbar() {
             </div>
           </Link>
 
+          
+
           {/* Central*/}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex flex-1 items-center  gap-10 ml-12 ">
             <Link to="/whatwedo" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               What we do
             </Link>
             <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Services
             </a>
-            <a href="#outsourcing-vas" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+            {/* <a href="#outsourcing-vas" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Outsourcing
             </a>
             <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
@@ -56,20 +89,26 @@ export default function Navbar() {
             </a>
             <a href="#contact" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Contact
-            </a>
+            </a> */}
           </div>
 
           {/* Aqui falta la etiqueta de Location */}
 
           {/* Menú y Botón - Derecha */}
           <div className="flex items-center gap-8">
-            <button className="flex items-center gap-2 group cursor-pointer">
-              <span className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white">Menu</span>
-              <div className="flex flex-col gap-1 w-6">
-                <span className="h-[2px] w-full bg-zinc-900 dark:bg-white rounded-full"></span>
-                <span className="h-[2px] w-full bg-zinc-900 dark:bg-white rounded-full"></span>
-              </div>
-            </button>
+            <button 
+                onClick={handleMenuToggle}
+                className="flex items-center gap-2 group cursor-pointer"
+              >
+                <span className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white">
+                  {isOpen ? "Menu" : "Menu"}
+                </span>
+                
+                <div className="relative w-6 h-4 flex items-center justify-center">
+                  <span className={`absolute h-[2px] w-full bg-zinc-900 dark:bg-white rounded-full transition-all duration-300 ${isOpen ? "rotate-45" : "-translate-y-1"}`}></span>
+                  <span className={`absolute h-[2px] w-full bg-zinc-900 dark:bg-white rounded-full transition-all duration-300 ${isOpen ? "-rotate-45" : "translate-y-1"}`}></span>
+                </div>
+              </button>
 
             <button
               type="button"
@@ -94,5 +133,24 @@ export default function Navbar() {
         </nav>
       </div>
     </header>
+    
+
+      <LineTransition isVisible={isOpen} />
+
+       <AnimatePresence>
+         {showSegment && (
+           <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 z-[45] bg-zinc-950"
+              >
+             <Menu />
+            </motion.div>
+            )}
+
+        </AnimatePresence>
+    </>
+
   )
 }

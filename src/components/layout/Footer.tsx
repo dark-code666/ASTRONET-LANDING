@@ -78,7 +78,7 @@ const scrollToParallax = (sectionNumber: number) => {
 };
 
   return (
-    <footer className="w-full bg-white text-zinc-950 pt-20 pb-10 dark:bg-[#0d1110] dark:text-white">
+    <footer className="w-full bg-[#0d1110] text-zinc-950 pt-20 pb-10 dark:bg-[#0d1110] dark:text-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         
         {/* BARRA DE CONTACTO SUPERIOR */}
@@ -202,15 +202,15 @@ const scrollToParallax = (sectionNumber: number) => {
           <div>
             <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-white mb-8">Web Insights</h4>
             <div className="space-y-6">
-              <a href="#insights" className="flex gap-4 group">
+              <a href="#insights" className="flex gap-4 group text-white">
                 <div className="w-12 h-12 rounded-full bg-zinc-800 flex-shrink-0 overflow-hidden group-hover:ring-2 group-hover:ring-[#A3FF00] transition-all">
                   <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100" alt="Insight" className="w-full h-full object-cover opacity-60" />
                 </div>
-                <p className="text-[11px] font-bold leading-tight group-hover:text-[#A3FF00] transition-colors">
+                <p className="text-[11px]  font-bold leading-tight group-hover:text-[#A3FF00] transition-colors">
                   Discover the Industries Thriving with Booking Websites
                 </p>
               </a>
-              <a href="#insights" className="flex gap-4 group">
+              <a href="#insights" className="flex gap-4 group text-white">
                 <div className="w-12 h-12 rounded-full bg-zinc-800 flex-shrink-0 overflow-hidden group-hover:ring-2 group-hover:ring-[#A3FF00] transition-all">
                   <img src="https://images.unsplash.com/photo-1523206489230-c012c740c120?w=100" alt="Insight" className="w-full h-full object-cover opacity-60" />
                 </div>

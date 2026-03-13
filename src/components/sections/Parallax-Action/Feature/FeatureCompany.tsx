@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function FeatureCompany() {
   return (
     <section className="bg-white py-10 px-10 md:px-20">
@@ -21,9 +23,13 @@ export default function FeatureCompany() {
             </p>
           </div>
 
+
+          <Link to="/contact">
           <button className="px-10 py-4 border border-zinc-900 text-zinc-900 font-serif text-[18px] leading-[1.2] tracking-tighter  hover:bg-zinc-900 hover:text-white transition-all duration-300">
             Work with us
           </button>
+          </Link>
+
         </div>
 
       </div>
