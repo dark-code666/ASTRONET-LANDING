@@ -4,7 +4,7 @@ export default function App() {
   return <Home />
 } */
 
-import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout';
 import Home from './pages/Home';
 import Belleek from './pages/Belleek'; 

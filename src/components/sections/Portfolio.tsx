@@ -21,15 +21,15 @@ export default function PortfolioCarousel() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="w-full bg-white py-16 sm:py-24 overflow-hidden dark:bg-[#0d1110]">
+    <section id="work" className="w-full bg-white py-16 sm:py-24 overflow-hidden dark:bg-[#0d1110]">
       {/* CONTENEDOR DE TEXTO */}
       <div className="mx-auto max-w-6xl w-full px-4 sm:px-6 lg:px-12 relative mb-12 sm:mb-16">
         
         {/* FILA SUPERIOR: Label y Botón */}
         <div className="flex justify-between items-start mb-6">
           <div className="flex items-center gap-2">
-            <span className="text-[#A3FF00] text-sm">↗</span>
-            <p className="text-[#A3FF00] font-black text-[10px] tracking-[0.4em] uppercase">
+            <span className="text-[#15803D] dark:text-[#A3FF00] text-sm font-bold">↗</span>
+            <p className="text-[#15803D] dark:text-[#A3FF00] font-black text-[10px] tracking-[0.4em] uppercase">
               LATEST WORK
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function PortfolioCarousel() {
             className="group flex items-center justify-center transition-transform hover:scale-110 mb-2"
           >
             <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 12H58M58 12L48 2M58 12L48 22" stroke="#A3FF00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path className="stroke-[#15803D] dark:stroke-[#A3FF00]" d="M1 12H58M58 12L48 2M58 12L48 22" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
         </div>

@@ -31,30 +31,25 @@ export default function Navbar() {
           
           {/* Logo a la izquierda */}
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-black tracking-tighter text-zinc-950 uppercase leading-none">
-              AN<span className="text-zinc-400 font-light">′</span>
-          <a href="/" className="flex items-center">
             <span className="text-2xl font-black tracking-tighter text-zinc-950 dark:text-white uppercase leading-none">
-              AN<span className="text-zinc-400 dark:text-zinc-500 font-light">′</span>
+              AN<span className="text-zinc-400 font-light">′</span>
             </span>
             
-            <div className="leading-tight  ml-2">
-              <div className="text-sm font-semibold text-zinc-950 dark:text-white">Astronet</div>
-              <div className="text-xs text-zinc-500 dark:text-zinc-300">Software Development Studio</div>
+            <div className="leading-tight ml-3 border-l border-zinc-300 dark:border-zinc-700 pl-3">
+              <div className="text-base font-bold text-zinc-950 dark:text-white tracking-tight">ASTRONET</div>
             </div>
           </Link>
 
           {/* Central*/}
           <div className="hidden md:flex items-center gap-10">
-            <Link to="/whatwedo" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
+            <Link to="/whatwedo" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               What we do
             </Link>
-            <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 hover:opacity-70 transition-opacity">
             <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
-              What we do
+              Services
             </a>
             <a href="#outsourcing-vas" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
-              Outsourcing and VAs
+              Outsourcing
             </a>
             <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Case Studies

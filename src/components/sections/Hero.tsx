@@ -8,9 +8,9 @@ export type HeroProps = {
 
 export default function Hero({
   eyebrow = 'ASTRONET • SOFTWARE DEVELOPMENT',
-  title = 'Bespoke software that fits your orbit.',
+  title = 'Scale Your Business With Virtual Assistants, AI Automations, and Custom Software',
   description =
-    'We design and build web products that become the backbone for seamless operations, faster delivery, and measurable growth.',
+    'Achieve your goals and maximize ROI with our scalable and flexible outsourcing solutions.',
 }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-[#050505]">

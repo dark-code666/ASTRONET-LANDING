@@ -7,6 +7,7 @@ import ParallaxSections from '../components/sections/ParallaxSections'
 import Portfolio from '../components/sections/Portfolio'
 import InfoSegment from '../components/sections/InfoSegment'
 import OutsourcingVAs from '../components/sections/OutsourcingVAs'
+import Navbar from '../components/layout/Navbar'
 
 
 export default function Home() {
@@ -17,14 +18,16 @@ export default function Home() {
       <main>
         <Hero />
         <Showcase />
+        <OutsourcingVAs />
         <Marquee />
         <Features />
-        <OutsourcingVAs />
         <ParallaxSections />
         <Portfolio />
         <InfoSegment />
         <Marquee />
         <CTA />
+      </main>
+    </div>
     </>
   )
 }

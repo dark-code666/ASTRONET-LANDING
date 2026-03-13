@@ -46,7 +46,7 @@ export default function Features({
           {items.map((f) => (
             <div
               key={f.title}
-              className="rounded-2xl border border-zinc-900/10 bg-zinc-50 p-3 py-10 dark:border-white/10 dark:bg-white/5"
+              className="rounded-2xl border border-zinc-900/10 bg-zinc-50 p-6 py-10 sm:p-8 dark:border-white/10 dark:bg-white/5"
             >
               <div className="flex items-center justify-between">
                 <div className="text-sm font-semibold text-zinc-950 dark:text-white">
