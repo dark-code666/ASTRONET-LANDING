@@ -75,9 +75,11 @@ const closeMenuOnNavigate = () => {
 
           {/* Central*/}
           <div className="hidden md:flex flex-1 items-center  gap-10 ml-12 ">
-            <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+            <Link to="/whatwedo">
+            <a className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               What we do
             </a>
+            </Link>
             <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Services
             </a>

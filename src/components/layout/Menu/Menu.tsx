@@ -9,7 +9,7 @@ const navigationLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "#services" },
   { name: "Outsoursing", href: "#outsourcing-vas" },
-  { name: "What we Do", href: "#services", active: true },
+  { name: "What we Do", href: "/whatwedo", active: true },
   { name: "Case Studies", href: "#work" },
   { name: "Contact", href: "#contact" },
 ];
