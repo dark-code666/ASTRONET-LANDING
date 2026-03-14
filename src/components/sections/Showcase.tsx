@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
-// No Link needed from lucide-react in this component
+import { Link as LinkIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 
 const IMAGES = [
   "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -73,14 +75,13 @@ export default function Showcase() {
             designed to convert and scale.
           </p>
 
+            <Link 
+              to="/contact" 
+              className="inline-block px-10 py-4 bg-zinc-950 text-white rounded-2xl font-bold hover:bg-lime-400 hover:text-zinc-950 transition-all duration-300 cursor-pointer"
+            >
+              Work with us
+            </Link>
         
-           <button className="px-10 py-4 bg-zinc-950 text-white rounded-2xl font-bold hover:bg-lime-400 hover:text-zinc-950 transition-all duration-300 cursor-pointer">
-            Work with us
-           </button>
-          
-           
-          
-         
 
         </div>
 
@@ -88,5 +89,6 @@ export default function Showcase() {
     </section>
   );
 }
+          
 
-      
+         
