@@ -83,10 +83,12 @@ const closeMenuOnNavigate = () => {
             <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Services
             </a>
-            {/* <a href="#outsourcing-vas" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
-              Outsourcing
-            </a>
-            <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+            <Link to="/subscriptions">
+              <a className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+                Subscriptions
+              </a>
+            </Link>
+            {/* <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Case Studies
             </a>
             <a href="#contact" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">

@@ -15,6 +15,7 @@ import Company from './pages/whatwedo/Company';
 import Booking from './pages/whatwedo/Booking';
 import Community from './pages/whatwedo/Community';
 import ECommerce from './pages/whatwedo/ECommerce';
+import Subscriptions from './pages/Subscriptions';
 
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/belleek" element={<Belleek />} />
           <Route path="/salboy" element={<Salboy />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/subscriptions" element={<Subscriptions />} />
           <Route path="/whatwedo">
            <Route index element={<Whatwedo />} />
            <Route path="Company-Websites" element={<Company/>} />

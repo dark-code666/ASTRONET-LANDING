@@ -30,13 +30,14 @@ export default function CTA({
               <Button href="#" className="w-full lg:w-56">
                 Start a project
               </Button>
-              <Button
+             {/*} <Button
                 href="#contact"
                 variant="ghost"
                 className="w-full text-white hover:bg-white/10 active:bg-white/15 lg:w-56"
               >
                 Request a quote
               </Button>
+              */}
             </div>
           </div>
 

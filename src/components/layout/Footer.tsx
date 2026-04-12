@@ -145,10 +145,10 @@ const scrollToParallax = (sectionNumber: number) => {
             </ul>
           </div>
 
-            {/* 2. Our Websites */}
+            {/* 2. Our Services */}
             <div>
               <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-white mb-8">
-                Our Websites
+                Our services
               </h4>
               <ul className="space-y-4 text-xs font-bold text-zinc-400 tracking-wide uppercase">
                 <li>
@@ -156,7 +156,7 @@ const scrollToParallax = (sectionNumber: number) => {
                     onClick={() => scrollToParallax(1)} 
                     className="hover:text-white transition-colors text-left w-full uppercase"
                   >
-                    Company Websites
+                   Software Development
                   </button>
                 </li>
                 <li>
@@ -164,7 +164,7 @@ const scrollToParallax = (sectionNumber: number) => {
                     onClick={() => scrollToParallax(2)} 
                     className="hover:text-white transition-colors text-left w-full uppercase"
                   >
-                    Online Stores
+                  eCommerce Platforms
                   </button>
                 </li>
                 <li>
@@ -172,7 +172,7 @@ const scrollToParallax = (sectionNumber: number) => {
                     onClick={() => scrollToParallax(3)} 
                     className="hover:text-white transition-colors text-left w-full uppercase"
                   >
-                    Booking Websites
+                    Outsourcing 
                   </button>
                 </li>
                 <li>
@@ -180,7 +180,7 @@ const scrollToParallax = (sectionNumber: number) => {
                     onClick={() => scrollToParallax(4)} 
                     className="hover:text-white transition-colors text-left w-full uppercase"
                   >
-                    Community Platforms
+                   AI 
                   </button>
                 </li>
               </ul>
