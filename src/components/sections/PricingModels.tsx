@@ -121,7 +121,7 @@ const PricingModels = () => {
             
             {/* Contenedor de Texto */}
             <div className="text-left">
-            <h3 className="text-2xl font-bold text-gray-900 mt-0 mb-2">
+            <h3 className="text-2xl font-bold text-gray-900 mt-0 mb-2 dark:text-white">
                 Not sure which model fits you?
             </h3>
             <p className="text-zinc-600 dark:text-zinc-400 ">
@@ -132,7 +132,7 @@ const PricingModels = () => {
             
             <div className="flex-shrink-0">
             <Link to="/contact">
-                <button className="bg-transparent text-zinc-900 font-semibold hover:bg-zinc-900/5 active:bg-zinc-900/10 w-full border border-zinc-900/10  px-10 py-4 rounded-xl transform hover:scale-102 active:scale-90 shadow-lg ">
+                <button className="bg-transparent text-zinc-900 dark:bg-gray-100 dark:text-black font-semibold hover:bg-zinc-900/5 dark:hover:bg-gray-200 active:bg-zinc-900/10 w-full border border-zinc-900/10  px-10 py-4 rounded-xl transform hover:scale-102 active:scale-90 shadow-lg ">
                 Book a Call
                 </button>
             </Link>

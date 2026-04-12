@@ -80,8 +80,8 @@ const closeMenuOnNavigate = () => {
               What we do
             </a>
             </Link>
-            <a href="#services" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
-              Services
+            <a href="/#outsourcing-vas" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+              Outsourcing And vas
             </a>
             <Link to="/subscriptions">
               <a className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">

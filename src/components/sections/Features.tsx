@@ -1,45 +1,84 @@
 type Feature = {
   title: string
+  subtitulo?: string
   description: string
 }
 
 export type FeaturesProps = {
   title?: string
+  subtitulo?: string
   description?: string
   items?: Feature[]
 }
 
 export default function Features({
   title = 'What we do ?',
-  description = 'A focused toolkit for modern SaaS and internal products.',
+  subtitulo = 'At Dock Yard, we turn digital product ideas into reality.',
+  description = 'From strategy and desing to full-scale product development, we combine human expertise with AI-poweres tools to:',
   items = [
     {
+      title: 'Product Strategy & Discovery',
+      description:
+        'Aling your vision with user needs and bussiness goals to create a roadmap for success.',
+    },
+    {
+      title: 'Custom Websites & Mobile Apps',
+      description:
+        'Build scalable, higth-performing web and native applications with modern frameworks.',
+    },
+    {
+      title: 'Architectural Reviews & Technical Audits',
+      description:
+        'Ensure your system is built for scalability, security, and long-term success with expert architecture assessments.',
+    },
+     {
       title: 'UI engineering',
       description:
         'Responsive, accessible interfaces with a clean component architecture.',
     },
     {
-      title: 'Product design',
+      title: 'Application Maintenance',
       description:
-        'From wireframes to polished visuals, designed for clarity and conversion.',
+        'Keep your applixation runnung at peak performance with our maintenance, updates, and optimization offerings.',
     },
     {
-      title: 'Delivery & iteration',
+      title: 'Engineering Consulting & Team Augmentation',
       description:
-        'Fast releases, feedback loops, and code that stays maintainable.',
+        'Needs expert developers? Our teanm integrates seamlessly to accelerate your roadmap.',
     },
   ],
 }: FeaturesProps) {
   return (
     <section id="services" className="bg-white dark:bg-[#050505]">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tighter text-zinc-900 dark:text-white sm:text-3xl">
             {title}
           </h2>
+           <p className="mt-2  text-sm leading-7  font-bold text-zinc-900 dark:text-white/70 sm:text-">
+            {subtitulo}
+          </p>
           <p className="mt-2  text-sm leading-7 text-zinc-600 dark:text-white/70 sm:text-">
             {description}
           </p>
+
+          <div className="space-y-2 mt-4">
+             <li className="text-sm ml-4  text-gray-700 flex items-start">
+                 <span className="mr-2 text-zinc-900">•</span> 
+                <span className=" text-zinc-600 dark:text-white/70">Enhance our development process, and reduce time and cost</span>
+             </li>
+              <li className="text-sm ml-4 text-gray-700 flex items-start">
+                 <span className="mr-2 text-zinc-900">•</span> 
+                  <span className=" text-zinc-600 dark:text-white/70">Give your product, Platform, or service an edge over the competition</span>
+              </li>
+              <li className="text-sm ml-4 text-gray-700 flex items-start">
+                <span className="mr-2 text-zinc-900">•</span> 
+                <span className=" text-zinc-600 dark:text-white/70">Streamline your business operations and internal workflows</span>
+               </li>
+         </div>
+
+        <br />
+         <h4 className="text-xs font-bold text-blue-900 uppercase mb-3 tracking-tighter dark:text-[#A3FF00]">SEE ALL SERVICES</h4>
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

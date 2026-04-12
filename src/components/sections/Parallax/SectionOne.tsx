@@ -16,7 +16,7 @@ export default function SectionOne() {
       <div className="w-full px-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         
         {/* BLOQUE DE TEXTO */}
-        <Link to="/whatwedo/Company-Websites">
+        <Link to="/whatwedo/software-development">
         <div 
           className="group flex flex-col items-start cursor-default"
           onMouseEnter={() => setActiveImage(imgCompany)}
@@ -27,17 +27,17 @@ export default function SectionOne() {
           </p>
 
           <h2 className="text-white text-6xl lg:text-7xl font-serif mb-6 leading-[1.1] tracking-tight transform transition-transform duration-700 ease-out group-hover:translate-x-6">
-            Company <br/> Websites.
+            Software <br/> Development.
           </h2>
 
           <p className="text-zinc-500 max-w-sm mb-8 text-lg leading-relaxed transform transition-transform duration-700 ease-out delay-75 group-hover:translate-x-6">
-            Enhance your business with a bespoke online presence that promotes your work, services and brand.
+            Scalable solutions built to optimize your digital infrastructure and accelerate growth.
           </p>
           
          
          
           <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10 transform transition-transform duration-700 ease-out delay-100 group-hover:translate-x-8">
-            {['Financial Services', 'Start Ups', 'Non-profits', 'Creatives'].map(item => (
+            {['FULL-STACK SYSTEMS', 'CLOUD INFRASTRUCTURE', 'API INTEGRATIONS', 'MOBILE SOLUTIONS'].map(item => (
               <div key={item} className="flex items-center gap-3 text-[10px] font-black uppercase text-zinc-400">
                 <span className="text-[#A3FF00]">✔</span> {item}
               </div>

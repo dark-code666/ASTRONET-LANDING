@@ -54,7 +54,8 @@ export default function Footer({
 }
 */
 
-import { Mail, MessageCircle, Calendar } from 'lucide-react';
+import { Mail, MessageCircle, Calendar} from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -123,7 +124,9 @@ const scrollToParallax = (sectionNumber: number) => {
               </div>
               <div>
                 <p className="text-[9px] font-black tracking-widest text-zinc-500 uppercase">Schedule a call</p>
+                <Link to="/contact">
                 <p className="text-sm font-bold uppercase tracking-tight text-zinc-950 dark:text-white">START A PROJECT</p>
+                </Link>
               </div>
             </a>
           </div>
@@ -137,11 +140,19 @@ const scrollToParallax = (sectionNumber: number) => {
             <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-[#A3FF00] mb-8">Navigation</h4>
             <ul className="space-y-4 text-xs font-bold text-zinc-400 uppercase tracking-widest">
               <li><a href="#home" className="text-[#A3FF00] hover:brightness-125">Home</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#work" className="hover:text-white transition-colors">Latest Work</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">What We Do</a></li>
+              <li>
+                <Link to="/about-us">
+                  <a className="hover:text-white transition-colors">About Us</a>
+                </Link>
+              </li>
+              <li><a href="/#work" className="hover:text-white transition-colors">Latest Work</a></li>
+              <li><a href="/#services" className="hover:text-white transition-colors">What We Do</a></li>
+              {/*
               <li><a href="#insights" className="hover:text-white transition-colors">Insights</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
+              */}
+             <Link to="/contact">
+              <li><a className="hover:text-white transition-colors">Contact</a></li>
+             </Link>
             </ul>
           </div>
 
@@ -152,36 +163,43 @@ const scrollToParallax = (sectionNumber: number) => {
               </h4>
               <ul className="space-y-4 text-xs font-bold text-zinc-400 tracking-wide uppercase">
                 <li>
+                  <Link to="/whatwedo/Software-Development">
                   <button 
-                    onClick={() => scrollToParallax(1)} 
                     className="hover:text-white transition-colors text-left w-full uppercase"
                   >
                    Software Development
                   </button>
+                  </Link>
                 </li>
                 <li>
+                  <Link to="/whatwedo/eCommerce">
                   <button 
-                    onClick={() => scrollToParallax(2)} 
+                   // onClick={() => scrollToParallax(2)} 
                     className="hover:text-white transition-colors text-left w-full uppercase"
                   >
                   eCommerce Platforms
                   </button>
+                  </Link>
                 </li>
                 <li>
+                  <Link to="/whatwedo/Outsourcing"> 
                   <button 
-                    onClick={() => scrollToParallax(3)} 
                     className="hover:text-white transition-colors text-left w-full uppercase"
                   >
                     Outsourcing 
                   </button>
+                  </Link>
                 </li>
                 <li>
+                  <Link to="/whatwedo/Artificial-Intelligence">
                   <button 
-                    onClick={() => scrollToParallax(4)} 
+                    // onClick={() => scrollToParallax(4)} 
                     className="hover:text-white transition-colors text-left w-full uppercase"
                   >
                    AI 
                   </button>
+                  </Link>
+
                 </li>
               </ul>
             </div>

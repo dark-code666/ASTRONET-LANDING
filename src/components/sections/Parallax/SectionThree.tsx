@@ -19,7 +19,7 @@ export default function SectionThree() {
         
         {/* BLOQUE DE TEXTO (IZQUIERDA) */}
              
-        <Link to="/whatwedo/Booking">
+        <Link to="/whatwedo/Outsourcing">
 
         <div 
           className="group cursor-default flex flex-col items-start"
@@ -33,22 +33,22 @@ export default function SectionThree() {
           </p>
           
           <h2 className="text-zinc-900 text-6xl lg:text-7xl font-serif mb-6 leading-tight transition-transform duration-700 group-hover:translate-x-6">
-            Booking & <br/> Listing.
+            Outsourcing. <br/> 
           </h2>
           
           <p className="text-zinc-500 max-w-sm mb-8 text-lg transition-transform duration-700 delay-75 group-hover:translate-x-8">
-            Manage appointments, rentals, or services with a high-performance booking engine.
+            Scale your development capacity with a world-class dedicated team.
           </p>
           
           <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10 transition-transform duration-700 delay-100 group-hover:translate-x-10">
-            {['Property Portals', 'Service Booking', 'Event Listings', 'Marketplaces'].map(item => (
+            {['DEDICATED DEVELOPERS', 'STAFF AUGMENTATION', 'MANAGED IT SERVICES', 'PROJECT-BASED TEAMS'].map(item => (
               <div key={item} className="flex items-center gap-3 text-[10px] font-black uppercase text-zinc-500">
                 <span className="text-[#838e83]">✔</span> {item}
               </div>
             ))}
           </div>
 
-          <button className="px-10 py-4 border border-zinc-300 text-zinc-900 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-zinc-900 hover:text-white transition-all group-hover:translate-x-8">
+          <button className="px-10 py-4 border border-zinc-300 text-zinc-900 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-[#A3FF00] hover:text-black transition-all group-hover:translate-x-8">
             Find out more
           </button>
         </div>

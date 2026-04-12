@@ -5,7 +5,7 @@ import ScrollingLogos from "../../components/sections/Parallax-Action/ScrollingL
 import StartProyectOne from "../../components/sections/Parallax-Action/StarProyectOne";
 import ScrollHorOne from "../../components/sections/Parallax-Action/ScrollHorOne";
 
-export default function Company() { 
+export default function SoftwareDevelopment() { 
     return (
         <>
         <HeroCompany/>

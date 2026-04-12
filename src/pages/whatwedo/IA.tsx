@@ -6,7 +6,7 @@ import FeatureCommunity from "../../components/sections/Parallax-Action/Feature/
 import GridsCommunity from "../../components/sections/Parallax-Action/Grids/GridsCommunity";
 import ScrollHorOne from "../../components/sections/Parallax-Action/ScrollHorOne";
 
-export default function Community() {
+export default function IA() {
  return (
    <>
      <HeroCommunity />

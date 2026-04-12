@@ -2,7 +2,7 @@ import { Rocket } from 'lucide-react'; // Opcional usar un SVG
 
 export default function StartProyect() {
   return (
-    <section className="bg-white py-40 px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center border-b border-zinc-100">
+    <section  className="bg-white py-40 px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center border-b border-zinc-100">
      
   
       {/* CONTENEDOR DEL COHETE ANIMADO */}

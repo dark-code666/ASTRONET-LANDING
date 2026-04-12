@@ -1,11 +1,14 @@
+import BackgroundImg from "../../../../assets/IA2.png";
+ 
+
 export default function HeroCommunity() {
   return (
     <section className="relative w-full h-[84vh] bg-gray-200 overflow-hidden">
       
       {/* 2. Imagen de fondo del Mockup del Portátil */}
-      <div className="absolute top-1 right-10 w-full h-full pointer-events-none z-0 ">
+      <div className="absolute top-1 right-0.5 w-full h-full pointer-events-none z-0 ">
         <img 
-          src="https://static.vecteezy.com/system/resources/previews/054/585/177/non_2x/teamwork-collaboration-network-connection-communication-unity-support-partnership-synergy-global-network-free-png.png"
+          src={BackgroundImg}
           className="w-full h-full object-contain object-left-bottom opacity-70" 
           alt="Background decor"
         />
@@ -16,12 +19,12 @@ export default function HeroCommunity() {
             <div className="max-w-7xl mx-auto flex flex-col items-end text-right">
           
                 <p className="text-zinc-900 font-black text-[14px] tracking-[0.4em] uppercase mb-6">
-                    Community Platforms
+                    Artificial Intelligence
                 </p>
 
                 <h2 className="text-zinc-900 text-5xl lg:text-[85px] font-serif leading-[0.9] tracking-tighter italic">
-                    Build Relastionshion with <br />
-                    <span className="italic">Online Communities</span>
+                    Build Smarter Solutions<br />
+                    <span className="italic">with Real-Time Data</span>
                 </h2>
           
              </div>

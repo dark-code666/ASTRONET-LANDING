@@ -40,7 +40,7 @@ export default function SectionTwo() {
             </p>
             
             <h2 className="text-white text-6xl lg:text-7xl font-serif mb-6 leading-tight transition-transform duration-700 group-hover:-translate-x-6">
-              eCommerce <br/> Stores.
+              eCommerce <br/> Platforms.
             </h2>
 
             <p className="text-zinc-100 max-w-sm mb-8 text-lg transition-transform duration-700 delay-75 group-hover:-translate-x-8">

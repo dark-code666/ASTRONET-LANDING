@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import Button from '../ui/Button'
 
 type PillProps = {
@@ -83,16 +84,22 @@ export default function OutsourcingVAs() {
               </p>
               
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Button href="#contact" className="w-full sm:w-auto">
+                <Link to ="/contact">
+                <Button className="w-full sm:w-auto">
                   Request a quote
                 </Button>
+                </Link>
+                
+              {/* 
+              <Link to ="/contact"> 
                 <Button
-                  href="#contact"
                   variant="ghost"
                   className="w-full border border-zinc-900/10 bg-white text-zinc-900 hover:bg-zinc-900/5 active:bg-zinc-900/10 sm:w-auto dark:bg-transparent dark:text-white dark:hover:bg-white/10"
                 >
                   Schedule a call
                 </Button>
+                </Link>
+                */} 
               </div>
             </div>
 

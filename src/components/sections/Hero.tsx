@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import Button from '../ui/Button'
 
 export type HeroProps = {
@@ -35,24 +36,27 @@ export default function Hero({
             <Button href="#services" variant="secondary">
               What we do
             </Button>
-            <Button href="#contact" variant="ghost" className="justify-start">
+
+            <Link to="/contact">
+            <Button  variant="ghost" className="justify-start dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800 dark:active:bg-zinc-900/90">
               <span className="inline-flex items-center gap-2">
                 <span className="grid size-2 rounded-full bg-zinc-950 dark:bg-white" />
                 Book a call
               </span>
             </Button>
+            </Link>
           </div>
 
           <div className="mt-10 flex flex-wrap gap-6 text-xs text-zinc-500 dark:text-white/60">
-            <div className="flex items-center gap-2">
-              <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white">1</span>
+            <div className="flex items-center gap-2  dark:text-white ">
+              <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white ">1</span>
               Product design
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 dark:text-white">
               <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white">2</span>
               Frontend engineering
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 dark:text-white">
               <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white">3</span>
               Delivery & iteration
             </div>

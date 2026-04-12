@@ -4,7 +4,7 @@ export default function HeroECommerce() {
    <section className="relative w-full h-[84vh] bg-[#838e83] overflow-hidden">
       
       {/* 2. Imagen de fondo del Mockup del Portátil */}
-      <div className="absolute top-7 right-182 w-full h-full pointer-events-none z-0 ">
+      <div className="absolute top-1 right-182 w-full h-full pointer-events-none z-0 ">
         <img  
           src={imgEcommerce}
           className="w-full h-full object-contain object-right-bottom opacity-90" 
@@ -17,12 +17,12 @@ export default function HeroECommerce() {
             <div className="max-w-7xl mx-auto flex flex-col items-end text-right">
           
                 <p className="text-[#A3FF00] font-black text-[14px] tracking-[0.4em] uppercase mb-6">
-                   ECOMMERCE | ONLINE STORE
+                   ECOMMERCE | ONLINE PLATFORMS
                 </p>
 
                 <h2 className="text-white text-5xl lg:text-[85px] font-serif leading-[0.9] tracking-tighter italic">
                     Boost Your Business<br />
-                    <span className="italic">With Online Stores</span>
+                    <span className="italic">With Online Platforms</span>
                 </h2>
           
              </div>

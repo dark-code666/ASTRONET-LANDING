@@ -77,7 +77,7 @@ export default function Showcase() {
 
             <Link 
               to="/contact" 
-              className="inline-block px-10 py-4 bg-zinc-950 text-white rounded-2xl font-bold hover:bg-lime-400 hover:text-zinc-950 transition-all duration-300 cursor-pointer"
+              className="inline-block px-10 py-4 bg-zinc-950 text-white rounded-2xl font-bold hover:bg-lime-400 hover:text-zinc-950 transition-all duration-300 cursor-pointer dark:bg-gray-200 dark:text-zinc-950 dark:hover:bg-lime-400 dark:hover:text-zinc-950"
             >
               Work with us
             </Link>

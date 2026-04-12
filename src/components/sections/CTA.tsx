@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from '../ui/Button'
 
 export type CTAProps = {
@@ -27,9 +28,11 @@ export default function CTA({
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-              <Button href="#" className="w-full lg:w-56">
+              <Link to= "contact">
+              <Button className="w-full lg:w-56">
                 Start a project
               </Button>
+              </Link>
              {/*} <Button
                 href="#contact"
                 variant="ghost"
@@ -48,9 +51,11 @@ export default function CTA({
             <div>
               <span className="font-semibold text-white">Response time:</span> 24–48h
             </div>
-            <div>
+           {/*
+           <div>
               <span className="font-semibold text-white">Stack:</span> React, TypeScript, Tailwind
             </div>
+          */} 
           </div>
         </div>
       </div>

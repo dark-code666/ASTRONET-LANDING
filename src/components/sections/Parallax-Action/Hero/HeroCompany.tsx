@@ -19,7 +19,7 @@ export default function HeroCompany() {
             <div className="max-w-7xl mx-auto">
           
                 <p className="text-[#A3FF00] font-black text-[14px] tracking-[0.4em] uppercase mb-6">
-                   Community Platforms
+                  Software Development
                 </p>
 
                 <h2 className="text-white text-5xl lg:text-[85px] font-serif leading-[0.9] tracking-tighter">
