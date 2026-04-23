@@ -74,9 +74,9 @@ export default function Showcase() {
             designed to convert and scale.
           </p>
 
-            <Link 
-              to="/contact" 
-              className="inline-block px-10 py-4 bg-zinc-950 text-white rounded-2xl font-bold hover:bg-lime-400 hover:text-zinc-950 transition-all duration-300 cursor-pointer dark:bg-gray-200 dark:text-zinc-950 dark:hover:bg-lime-400 dark:hover:text-zinc-950"
+            <Link
+              to="/contact"
+              className="inline-block px-8 py-3 bg-zinc-200 text-zinc-900 rounded-2xl font-semibold hover:bg-zinc-300 transition-colors duration-200 cursor-pointer dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700"
             >
               Work with us
             </Link>

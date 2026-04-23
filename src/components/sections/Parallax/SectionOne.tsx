@@ -23,7 +23,7 @@ export default function SectionOne() {
           onMouseLeave={() => setActiveImage(imgCompany1)}
         >
           <p className="text-[#A3FF00] font-black text-[10px] tracking-[0.4em] mb-4 flex items-center gap-2 transform transition-transform duration-500 group-hover:translate-x-4">
-            <span className="text-xs">↗</span> WHAT WE DO
+            <span className="text-xs">↗</span> HOW WE DO
           </p>
 
           <h2 className="text-white text-6xl lg:text-7xl font-serif mb-6 leading-[1.1] tracking-tight transform transition-transform duration-700 ease-out group-hover:translate-x-6">

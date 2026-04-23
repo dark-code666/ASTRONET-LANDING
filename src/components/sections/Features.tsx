@@ -12,7 +12,7 @@ export type FeaturesProps = {
 }
 
 export default function Features({
-  title = 'What we do ?',
+  title = 'How we do ?',
   subtitulo = 'At Dock Yard, we turn digital product ideas into reality.',
   description = 'From strategy and desing to full-scale product development, we combine human expertise with AI-poweres tools to:',
   items = [

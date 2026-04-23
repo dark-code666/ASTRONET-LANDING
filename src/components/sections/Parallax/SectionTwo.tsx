@@ -36,7 +36,7 @@ export default function SectionTwo() {
             onMouseLeave={() => setActiveImage(imgEcommerce)}
           >
             <p className="text-[#A3FF00] font-black text-[10px] tracking-[0.4em] mb-4 transition-transform duration-500 group-hover:-translate-x-4">
-              ↗ WHAT WE DO
+              ↗ HOW WE DO
             </p>
             
             <h2 className="text-white text-6xl lg:text-7xl font-serif mb-6 leading-tight transition-transform duration-700 group-hover:-translate-x-6">

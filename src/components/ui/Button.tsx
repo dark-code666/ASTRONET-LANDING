@@ -24,7 +24,7 @@ const variants: Record<ButtonVariant, string> = {
   secondary:
     'bg-zinc-900 text-white hover:bg-zinc-800 active:bg-zinc-900/90',
   ghost:
-    'bg-transparent text-zinc-900 hover:bg-zinc-900/5 active:bg-zinc-900/10',
+    'bg-transparent text-zinc-900 dark:text-white hover:bg-zinc-900/5 active:bg-zinc-900/10',
 }
 
 const sizes: Record<ButtonSize, string> = {

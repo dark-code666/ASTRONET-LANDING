@@ -34,7 +34,7 @@ export default function Hero({
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Button href="#services" variant="secondary">
-              What we do
+              How we do
             </Button>
 
             <Link to="/contact">

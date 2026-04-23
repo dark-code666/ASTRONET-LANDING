@@ -9,16 +9,15 @@ const navigationLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "#services" },
   { name: "Outsoursing", href: "#outsourcing-vas" },
-  { name: "What we Do", href: "/whatwedo", active: true },
+  { name: "How we do", href: "/whatwedo", active: true },
   { name: "Case Studies", href: "#work" },
-  { name: "Contact", href: "#contact" },
 ];
 
 const whatWeDoLinks = [
-  { name: "Company Websites", href: "/whatwedo/Company-Websites" },
+  { name: "Company Websites", href: "/whatwedo/SoftwareDevelopment" },
   { name: "Online Store", href: "/whatwedo/eCommerce" },
-  { name: "Booking Websites", href: "/whatwedo/Booking" },
-  { name: "Community Platforms", href: "/whatwedo/Community-Platforms" },
+  { name: "Booking Websites", href: "/whatwedo/Outsourcing" },
+  { name: "Community Platforms", href: "/whatwedo/IA" },
 ];
 
 export default function Menu({ onNavigate }: MenuProps) {
@@ -63,7 +62,7 @@ export default function Menu({ onNavigate }: MenuProps) {
        
         <section>
           <h3 className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 font-bold mb-8">
-           What we Do
+           How we do
           </h3>
           <ul className="space-y-6 text-center md:text-left">
             {whatWeDoLinks.map((item) => (
@@ -107,15 +106,17 @@ export default function Menu({ onNavigate }: MenuProps) {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 group">
-              <div className="p-3 bg-white/5 rounded-xl group-hover:bg-[#A3FF00]/20 transition-colors">
-                <PhoneCall size={24} className="group-hover:text-[#A3FF00]" />
+            <Link to="/contact" onClick={() => onNavigate?.()} className="group">
+              <div className="flex items-start gap-4 group cursor-pointer">
+                <div className="p-3 bg-white/5 rounded-xl group-hover:bg-[#A3FF00]/20 transition-colors">
+                  <PhoneCall size={24} className="group-hover:text-[#A3FF00]" />
+                </div>
+                <div>
+                  <p className="text-[9px] uppercase tracking-widest text-zinc-500 mb-1">Schedule A Call</p>
+                  <p className="text-sm font-bold tracking-tight uppercase text-[#A3FF00]">Start A Project</p>
+                </div>
               </div>
-              <div>
-                <p className="text-[9px] uppercase tracking-widest text-zinc-500 mb-1">Schedule A Call</p>
-                <p className="text-sm font-bold tracking-tight uppercase text-[#A3FF00]">Start A Project</p>
-              </div>
-            </div>
+            </Link>
 
           </div>
         </section>

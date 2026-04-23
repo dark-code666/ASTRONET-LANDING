@@ -131,7 +131,7 @@ const PricingModels = () => {
             
             <div className="flex-shrink-0">
             <Link to="/contact">
-                <button className="bg-transparent text-zinc-900 dark:bg-gray-100 dark:text-black font-semibold hover:bg-zinc-900/5 dark:hover:bg-gray-200 active:bg-zinc-900/10 w-full border border-zinc-900/10  px-10 py-4 rounded-xl transform hover:scale-102 active:scale-90 shadow-lg ">
+                <button className="w-full px-10 py-4 rounded-xl font-semibold transition-colors shadow-lg bg-zinc-700 text-white hover:bg-lime-400 hover:text-zinc-950 dark:bg-white/5 dark:text-white dark:hover:bg-lime-400 dark:hover:text-zinc-950">
                 Book a Call
                 </button>
             </Link>
