@@ -67,7 +67,7 @@ export default function StartProyect() {
 
         <p className="md:col-span-2 text-center text-zinc-400 dark:text-zinc-400 text-[10px] mt-4">
           Please note, by submitting this form, you are agreeing to the <br/>
-          terms in the <span className="text-zinc-900 dark:text-white underline cursor-pointer">Harry King Studio Privacy Policy</span>.
+          terms in the <span className="text-zinc-900 dark:text-white underline cursor-pointer">Astronet Privacy Policy</span>.
         </p>
       </form>
     </section>

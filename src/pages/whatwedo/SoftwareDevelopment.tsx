@@ -4,7 +4,6 @@ import FeatureCompany from "../../components/sections/Parallax-Action/Feature/Fe
 import ScrollingLogos from "../../components/sections/Parallax-Action/ScrollingLogos";
 import StartProyectOne from "../../components/sections/Parallax-Action/StarProyectOne";
 
-
 export default function SoftwareDevelopment() { 
     return (
         <>

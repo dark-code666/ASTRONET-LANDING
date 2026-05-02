@@ -59,8 +59,8 @@ export default function InfoSegment() {
               alt="Harry King Profile"
             />
             <div className="absolute bottom-10 left-10">
-              <p className="text-white font-serif text-2xl">Harry King</p>
-              <p className="text-[8px] text-zinc-500 uppercase tracking-[0.4em]">Website Designer Jersey</p>
+              <p className="text-white font-serif text-2xl">Astronet Team</p>
+              <p className="text-[8px] text-zinc-500 uppercase tracking-[0.4em]">Custom Software & AI Agency</p>
             </div>
           </div>
 
@@ -68,16 +68,16 @@ export default function InfoSegment() {
             <div className="flex items-center gap-3 mb-6">
               <span className="text-[#A3FF00] font-bold">↗</span>
               <p className="text-[#A3FF00] font-black text-[10px] tracking-[0.4em] uppercase">
-                Harry King Studio
+                Astronet
               </p>
             </div>
 
             <h3 className="text-white text-4xl lg:text-5xl font-serif mb-8 leading-[1.2] tracking-tight">
-              A website design agency supporting SMEs in Jersey for over 6 years.
+              A software design agency supporting businesses worldwide for over 6 years.
             </h3>
 
             <p className="text-zinc-400 text-lg leading-relaxed  font-Semibold">
-              From the early days of being a versatile freelancer, Harry's journey has evolved into the establishment of Harry King Studio.
+              From the early days of specialized development, our journey has evolved into the establishment of Astronet.
             </p>
           </div>
         </div>
