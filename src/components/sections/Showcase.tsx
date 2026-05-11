@@ -23,7 +23,7 @@ export default function Showcase() {
 
           {[0, 1, 2].map((index) => (
             /* traslaciones para que queden en la misma posición */
-            <div key={index} className="flex flex-col">
+            <div key={index} className={`flex flex-col ${index === 0 ? 'hidden sm:flex' : index === 2 ? 'hidden md:flex' : 'flex'}`}>
               
               {/* ESTRUCTURA DEL TELÉFONO */}
               <div className="relative mx-auto border-zinc-150 bg-zinc-950 border-[7px] rounded-[2.5rem] h-[420px] w-[180px] shadow-2xl sm:h-[500px] sm:w-[220px]">

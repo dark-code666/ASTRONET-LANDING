@@ -2,14 +2,14 @@ import { Rocket } from 'lucide-react'; // Opcional usar un SVG
 
 export default function StartProyect() {
   return (
-    <section  className="bg-white py-40 px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center border-b border-zinc-100">
+    <section  className="bg-white dark:bg-[#050505] py-40 px-6 md:px-12 lg:px-24 flex flex-col items-center justify-center border-b border-zinc-100 dark:border-white/5">
      
   
       {/* CONTENEDOR DEL COHETE ANIMADO */}
       <div className="mb-12 relative flex items-center justify-center">
         {/*Cohete Principal con animación */}
         <div className="animate-bounce-slow">
-          <Rocket size={56} className="text-zinc-950 rotate-[-45deg]" strokeWidth={1} />
+          <Rocket size={56} className="text-zinc-950 dark:text-white rotate-[-45deg]" strokeWidth={1} />
         </div>
         
         {/* Puntos/Estrellas Decorativos*/}
@@ -30,7 +30,7 @@ export default function StartProyect() {
           Start Your Project With Astronet
         </h1>
         <p className="text-zinc-500 dark:text-white/70 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-          [PENDING DESCRIPTION]
+          [PENDING DESCRIPTION: We are ready to help you bring your vision to life with our expert team.]
         </p>
       </div>
 
@@ -61,7 +61,7 @@ export default function StartProyect() {
           <textarea rows={5} className="w-full border border-zinc-200 p-4 rounded-md focus:outline-none focus:border-zinc-900 transition-colors resize-none dark:bg-white/5 dark:border-white/10 dark:text-white" />
         </div>
 
-        <button className="md:col-span-2 bg-[#1a2b2b] text-white py-5 rounded-md font-black text-xs uppercase tracking-[0.2em] hover:bg-[#253d3d] transition-all mt-4">
+        <button className="md:col-span-2 bg-[#1a2b2b] dark:bg-[#A3FF00] text-white dark:text-zinc-950 py-5 rounded-md font-black text-xs uppercase tracking-[0.2em] hover:bg-[#253d3d] dark:hover:bg-[#b4ff33] transition-all mt-4">
           Submit Enquiry
         </button>
 

@@ -42,7 +42,7 @@ const featureData: Feature[] = [
 
 export default function GridsCompany() {
   return (
-    <section className="bg-white py-16 px-6 sm:px-12 md:px-20">
+    <section className="bg-white dark:bg-[#050505] py-16 px-6 sm:px-12 md:px-20">
       {/* Contenedor principal: 1 columna en móvil, 3 columnas en desktop */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16">
         
@@ -54,10 +54,10 @@ export default function GridsCompany() {
             
             {/* Contenido de la Card */}
             <div className="flex flex-col">
-              <h3 className="text-xl font-extrabold text-zinc-900 mb-3 tracking-tight leading-tight">
+              <h3 className="text-xl font-extrabold text-zinc-900 dark:text-white mb-3 tracking-tight leading-tight">
                 {feature.title}
               </h3>
-              <p className="text-zinc-500 text-sm leading-relaxed font-normal">
+              <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed font-normal">
                 {feature.description}
               </p>
             </div>

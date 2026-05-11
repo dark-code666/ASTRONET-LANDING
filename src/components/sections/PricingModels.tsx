@@ -51,11 +51,11 @@ const models = [
 
 const PricingModels = () => {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-6 bg-white dark:bg-[#050505]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 my-5">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Engagement Models</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Engagement Models</h2>
+          <p className="text-gray-600 dark:text-zinc-400 max-w-2xl mx-auto">
             Choose the collaboration path that best fits your project's scale and complexity.
           </p>
         </div>
@@ -65,15 +65,15 @@ const PricingModels = () => {
             <motion.div
               key={model.id}
               whileHover={{ y: -10 }}
-              className={`flex flex-col border-2 rounded-3xl overflow-hidden transition-shadow hover:shadow-xl ${model.color}`}
+              className={`flex flex-col border-2 rounded-3xl overflow-hidden transition-shadow hover:shadow-xl dark:bg-[#0a0a0a] dark:border-white/10 ${model.color}`}
             >
               {/* Header section*/}
-              <div className={`p-8 ${model.headerBg} border-b border-inherit`}>
-                <span className="text-xs font-bold uppercase tracking-widest text-gray-500">{model.tag}</span>
-                <h3 className="text-2xl font-bold text-gray-900 mt-2">{model.title}</h3>
-                <p className="text-sm text-gray-600 font-medium">{model.subtitle}</p>
+              <div className={`p-8 ${model.headerBg} dark:bg-white/5 border-b border-inherit`}>
+                <span className="text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-zinc-500">{model.tag}</span>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mt-2">{model.title}</h3>
+                <p className="text-sm text-gray-600 dark:text-zinc-400 font-medium">{model.subtitle}</p>
                 <div className="mt-6">
-                   <button className="w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors">
+                   <button className="w-full py-3 px-6 bg-blue-600 dark:bg-[#A3FF00] text-white dark:text-zinc-950 font-semibold rounded-full hover:bg-blue-700 dark:hover:bg-[#b4ff33] transition-colors">
                      Get Started
                    </button>
                 </div>
@@ -81,7 +81,7 @@ const PricingModels = () => {
 
               {/* Content Section */}
               <div className="p-8 flex-grow flex flex-col">
-                <p className="text-sm font-semibold text-gray-800 mb-6 italic">
+                <p className="text-sm font-semibold text-gray-800 dark:text-zinc-200 mb-6 italic">
                   {model.description}
                 </p>
 
@@ -90,8 +90,8 @@ const PricingModels = () => {
                     <h4 className="text-xs font-bold text-gray-400 uppercase mb-3 tracking-tighter">How it works:</h4>
                     <ul className="space-y-2">
                       {model.features.map((f, i) => (
-                        <li key={i} className="text-sm text-gray-700 flex items-start">
-                          <span className="mr-2 text-blue-500">•</span> {f}
+                        <li key={i} className="text-sm text-gray-700 dark:text-zinc-300 flex items-start">
+                          <span className="mr-2 text-blue-500 dark:text-[#A3FF00]">•</span> {f}
                         </li>
                       ))}
                     </ul>
@@ -101,8 +101,8 @@ const PricingModels = () => {
                     <h4 className="text-xs font-bold text-gray-400 uppercase mb-3 tracking-tighter">Why choose this:</h4>
                     <ul className="space-y-2">
                       {model.benefits.map((b, i) => (
-                        <li key={i} className="text-sm text-gray-700 flex items-start">
-                          <span className="mr-2 italic text-green-500">✔</span> {b}
+                        <li key={i} className="text-sm text-gray-700 dark:text-zinc-300 flex items-start">
+                          <span className="mr-2 italic text-green-500 dark:text-[#A3FF00]">✔</span> {b}
                         </li>
                       ))}
                     </ul>

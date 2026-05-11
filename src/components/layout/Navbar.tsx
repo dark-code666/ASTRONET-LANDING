@@ -81,10 +81,8 @@ const closeMenuOnNavigate = () => {
             <Link to="/#outsourcing-vas" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Outsourcing And vas
             </Link>
-            <Link to="/subscriptions">
-              <span className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
-                Subscriptions
-              </span>
+            <Link to="/pricing" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
+              Pricing
             </Link>
             {/* <a href="#work" className="text-[11px] font-black uppercase tracking-widest text-zinc-900 dark:text-white hover:opacity-70 transition-opacity">
               Case Studies

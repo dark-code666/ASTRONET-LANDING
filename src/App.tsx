@@ -12,7 +12,7 @@ import Salboy from './pages/Salboy';
 import Contact from './pages/Contact';
 import Whatwedo from './pages/Whatwedo';
 import ECommerce from './pages/whatwedo/ECommerce';
-import Subscriptions from './pages/Subscriptions';
+import Pricing from './pages/Pricing';
 import IA from './pages/whatwedo/IA';
 import SoftwareDevelopment from './pages/whatwedo/SoftwareDevelopment';
 import Outsourcing from './pages/whatwedo/Outsourcing';
@@ -28,7 +28,7 @@ export default function App() {
           <Route path="/belleek" element={<Belleek />} />
           <Route path="/salboy" element={<Salboy />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/subscriptions" element={<Subscriptions />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/whatwedo">
            <Route index element={<Whatwedo />} />
            <Route path="Software-Development" element={<SoftwareDevelopment/>} />

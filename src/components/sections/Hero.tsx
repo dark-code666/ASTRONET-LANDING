@@ -20,7 +20,7 @@ export default function Hero({
         <div className="absolute -bottom-24 right-[-10rem] h-72 w-[40rem] rounded-full bg-indigo-500/10 blur-3xl" />
       </div>
 
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-2 lg:gap-16">
+      <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 pt-32 pb-14 sm:px-6 sm:pt-40 sm:pb-20 lg:grid-cols-2 lg:gap-16">
         <div>
           <div className="text-xs font-semibold tracking-[0.2em] text-zinc-500 dark:text-white/60">
             {eyebrow}
@@ -33,7 +33,7 @@ export default function Hero({
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Button href="#parallax-container" variant="secondary">
+            <Button href="/whatwedo#parallax-container" variant="secondary">
               How we do
             </Button>
 
