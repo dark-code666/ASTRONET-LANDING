@@ -1,18 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
 import imgCompany from "../../../assets/Company.png";
 import imgCompany1 from "../../../assets/Company1.png";
 
 export default function SectionOne() {
-
   const [activeImage, setActiveImage] = useState(imgCompany);
 
-  //const secondaryImage = {imgCompany1}; // Imagen de cambio
-
   return (
-    <section   className="h-full w-full bg-[#0d1110] flex items-center">
+    <section className="h-full w-full bg-[#0d1110] flex items-center">
       <div className="w-full px-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         
         {/* BLOQUE DE TEXTO */}
@@ -31,11 +27,9 @@ export default function SectionOne() {
           </h2>
 
           <p className="text-zinc-500 max-w-sm mb-8 text-lg leading-relaxed transform transition-transform duration-700 ease-out delay-75 group-hover:translate-x-6">
-            Scalable solutions built to optimize your digital infrastructure and accelerate growth.
+            Scalable digital products designed to launch faster, support growth, and reduce operational friction.
           </p>
           
-         
-         
           <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10 transform transition-transform duration-700 ease-out delay-100 group-hover:translate-x-8">
             {['FULL-STACK SYSTEMS', 'CLOUD INFRASTRUCTURE', 'API INTEGRATIONS', 'MOBILE SOLUTIONS'].map(item => (
               <div key={item} className="flex items-center gap-3 text-[10px] font-black uppercase text-zinc-400">
@@ -44,9 +38,9 @@ export default function SectionOne() {
             ))}
           </div>
            
-           <button className="px-10 py-4 bg-transparent border border-white/20 text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-[#A3FF00] hover:text-black transition-all transform group-hover:translate-x-6 duration-700">
+          <button className="px-10 py-4 bg-transparent border border-white/20 text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-[#A3FF00] hover:text-black transition-all transform group-hover:translate-x-6 duration-700">
             Find out more
-           </button>
+          </button>
         </div>
         </Link>
 

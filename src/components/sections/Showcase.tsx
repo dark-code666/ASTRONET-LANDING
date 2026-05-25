@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-
 const IMAGES = [
   "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://plus.unsplash.com/premium_photo-1661963874418-df1110ee39c1?q=80&w=786&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -10,7 +9,6 @@ const IMAGES = [
   "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500",
   "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=500",
   "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=500",
-
 ];
 
 export default function Showcase() {
@@ -32,9 +30,6 @@ export default function Showcase() {
                 <div className="absolute -left-[9px] top-[120px] h-[30px] w-[3px] bg-zinc-800 rounded-l-lg" />
                 <div className="absolute -right-[9px] top-[110px] h-[50px] w-[3px] bg-zinc-800 rounded-r-lg" />
                 
-                {/* (Parte superior) 
-                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-16 h-4 bg-zinc-950 rounded-full z-30" />*/}
-
                 {/* PANTALLA CON SCROLL */}
                 <div className="rounded-[2.1rem] overflow-hidden w-full h-full bg-white relative z-10 dark:bg-white">
 
@@ -65,29 +60,22 @@ export default function Showcase() {
         {/* LADO DEL TEXTO */}
         <div className="space-y-10">
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 dark:text-white leading-[1.1]">
-            We help you manage every detail.
+            We become an extension of your product team.
           </h2>
 
-        
           <p className="text-base sm:text-lg text-zinc-600 dark:text-white/70 leading-relaxed max-w-lg">
-            We align technology with your business objectives through interfaces 
-            designed to convert and scale.
+            From strategy and development to scaling operations, we help companies execute faster with reliable offshore engineering and product-focused systems.
           </p>
 
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-zinc-200 dark:bg-zinc-800 px-6 sm:px-8 py-3 font-black uppercase tracking-tight text-xs sm:text-sm text-zinc-950 dark:text-white transition-all duration-300 hover:bg-[#A3FF00] hover:text-zinc-950 hover:shadow-[0_4px_14px_0_rgba(163,255,0,0.3)]"
-            >
-              Work with us
-            </Link>
-        
-
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center rounded-xl bg-zinc-200 dark:bg-zinc-800 px-6 sm:px-8 py-3 font-black uppercase tracking-tight text-xs sm:text-sm text-zinc-950 dark:text-white transition-all duration-300 hover:bg-[#A3FF00] hover:text-zinc-950 hover:shadow-[0_4px_14px_0_rgba(163,255,0,0.3)]"
+          >
+            Work with us
+          </Link>
         </div>
 
       </div>
     </section>
   );
 }
-          
-
-         

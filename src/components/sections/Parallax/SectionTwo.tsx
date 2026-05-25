@@ -5,7 +5,6 @@ import imgEcommerce from "../../../assets/eCommerce2.png";
 import imgEcommerce1 from "../../../assets/eCommerce3.png";
 
 export default function SectionTwo() {
-
   const [activeImage, setActiveImage] = useState(imgEcommerce);
 
   return (
@@ -15,15 +14,12 @@ export default function SectionTwo() {
         {/* LADO IZQUIERDO */}
         <div className="relative flex justify-center lg:justify-start">
           <div className="relative w-full max-w-[550px] aspect-square flex items-center justify-center">
-        
             <img 
               src={activeImage} 
               key={activeImage} 
               className="w-full h-full object-contain transition-all duration-700 ease-in-out opacity-100 animate-in fade-in" 
               alt="eCommerce Display" 
             />
-
-         
             <div className="absolute -z-10 w-72 h-72 bg-white/5 blur-[120px] rounded-full" />
           </div>
         </div>
@@ -44,7 +40,7 @@ export default function SectionTwo() {
             </h2>
 
             <p className="text-zinc-100 max-w-sm mb-8 text-lg transition-transform duration-700 delay-75 group-hover:-translate-x-8">
-              Boost your products with seamless online shopping. Simplify sales and increase revenue.
+              High-performance ecommerce platforms designed to streamline operations, improve customer experience, and support scalable growth.
             </p>
             
             <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10 transition-transform duration-700 delay-100 group-hover:-translate-x-10">

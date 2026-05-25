@@ -8,10 +8,10 @@ export type HeroProps = {
 }
 
 export default function Hero({
-  eyebrow = 'ASTRONET - OUTSOURCING, AI AND SOFTWARE',
-  title = 'Scale Your Business With Custom Software, AI, and Outsourcing',
+  eyebrow = 'ASTRONET — SOFTWARE & ENGINEERING PARTNER',
+  title = 'Build and Scale Digital Products Faster',
   description =
-    'Achieve your goals and maximize ROI with our scalable solutions. From dedicated developers to intelligent automations and premium platforms.',
+    'We help growing companies launch digital products, scale engineering capacity, and streamline operations through software, AI-powered systems, and dedicated offshore teams.',
 }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-white dark:bg-[#050505]">
@@ -33,32 +33,32 @@ export default function Hero({
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Button href="/whatwedo#parallax-container" variant="secondary">
-              How we do
-            </Button>
-
             <Link to="/contact">
-              <Button variant="ghost" className="justify-start border border-zinc-200 bg-white text-zinc-950 hover:bg-[#A3FF00] hover:border-[#A3FF00] hover:text-zinc-950 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white dark:hover:bg-[#A3FF00] dark:hover:border-[#A3FF00] dark:hover:text-zinc-950 dark:active:bg-zinc-800 transition-colors">
+              <Button variant="primary" className="w-full sm:w-auto justify-center bg-[#A3FF00] text-zinc-950 hover:bg-lime-300 active:bg-lime-400/90 font-black uppercase tracking-tight text-xs sm:text-sm px-6 h-11 shadow-[0_4px_14px_0_rgba(163,255,0,0.3)] transition-all">
                 <span className="inline-flex items-center gap-2 font-bold">
-                  <span className="grid size-2 rounded-full bg-zinc-950 dark:bg-white" />
-                  Book a call
+                  <span className="grid size-2 rounded-full bg-zinc-950" />
+                  Book a Strategy Call
                 </span>
               </Button>
             </Link>
+
+            <Button href="/whatwedo#parallax-container" variant="ghost" className="w-full sm:w-auto justify-center border border-zinc-200 bg-white text-zinc-950 hover:bg-zinc-100 hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800 dark:hover:border-zinc-700 transition-all font-black uppercase tracking-tight text-xs sm:text-sm px-6 h-11">
+              View our Work
+            </Button>
           </div>
 
           <div className="mt-10 flex flex-wrap gap-6 text-xs text-zinc-700 font-medium dark:text-zinc-300">
-            <div className="flex items-center gap-2  dark:text-white ">
-              <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white ">1</span>
-              Product design
+            <div className="flex items-center gap-2 dark:text-white">
+              <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 font-bold">✓</span>
+              Faster product launches
             </div>
             <div className="flex items-center gap-2 dark:text-white">
-              <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white">2</span>
-              Frontend engineering
+              <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 font-bold">✓</span>
+              Scalable Engineering teams
             </div>
             <div className="flex items-center gap-2 dark:text-white">
-              <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white">3</span>
-              Delivery & iteration
+              <span className="grid size-5 place-items-center rounded-lg bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 font-bold">✓</span>
+              Operational Efficiency
             </div>
           </div>
         </div>
@@ -76,21 +76,21 @@ export default function Hero({
 
               <div className="grid gap-4">
                 <div className="rounded-2xl border border-zinc-900/10 bg-white/70 p-4 dark:border-white/10 dark:bg-white/5">
-                  <div className="text-sm font-semibold text-zinc-950 dark:text-white">Ship faster</div>
+                  <div className="text-sm font-semibold text-zinc-950 dark:text-white">Ship Faster</div>
                   <div className="mt-1 text-sm text-zinc-600 dark:text-white/70">
-                    Clear scope, clean UI, maintainable code.
+                    Reliable execution with scalable engineering teams.
                   </div>
                 </div>
                 <div className="rounded-2xl border border-zinc-900/10 bg-white/70 p-4 dark:border-white/10 dark:bg-white/5">
-                  <div className="text-sm font-semibold text-zinc-950 dark:text-white">Scale safely</div>
+                  <div className="text-sm font-semibold text-zinc-950 dark:text-white">Scale With Confidence</div>
                   <div className="mt-1 text-sm text-zinc-600 dark:text-white/70">
-                    Components built to grow with your landing.
+                    Systems and infrastructure built for long-term growth.
                   </div>
                 </div>
                 <div className="rounded-2xl border border-zinc-900/10 bg-white/70 p-4 dark:border-white/10 dark:bg-white/5">
-                  <div className="text-sm font-semibold text-zinc-950 dark:text-white">Measure impact</div>
+                  <div className="text-sm font-semibold text-zinc-950 dark:text-white">Reduce Operational Bottlenecks</div>
                   <div className="mt-1 text-sm text-zinc-600 dark:text-white/70">
-                    Performance-first and conversion-ready.
+                    AI-powered workflows and product-focused execution.
                   </div>
                 </div>
               </div>

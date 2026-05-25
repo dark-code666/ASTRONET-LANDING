@@ -30,7 +30,7 @@ export default function StartProyect() {
           Start Your Project With Astronet
         </h1>
         <p className="text-zinc-500 dark:text-white/70 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-          [PENDING DESCRIPTION: We are ready to help you bring your vision to life with our expert team.]
+          Whether you need a scalable SaaS platform, AI-powered systems, or dedicated offshore teams, Astronet helps you execute faster with reliable product-focused expertise.
         </p>
       </div>
 
