@@ -1,39 +1,40 @@
-import BackgroundImg from "../../../../assets/IA2.png";
- 
+import BackgroundImg from "../../../../assets/IA2.png"
+import { Link } from "react-router-dom"
 
 export default function HeroCommunity() {
   return (
-    <section className="relative w-full min-h-[90vh] lg:h-[90vh] bg-gray-200 dark:bg-[#050505] overflow-hidden flex items-center pt-24 lg:pt-0">
-      
-      <div className="max-w-7xl mx-auto w-full px-6 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-        
-        {/* Lado de la Imagen */}
-        <div className="relative order-2 lg:order-1 flex justify-center lg:justify-start">
-          <div className="relative w-full max-w-md lg:max-w-xl aspect-square lg:aspect-auto lg:h-[70vh]">
-            <img 
+    <section className="relative flex min-h-[92svh] w-full items-center overflow-hidden bg-gray-200 pb-14 pt-28 dark:bg-[#050505] sm:pt-32 lg:h-[90vh] lg:pb-0 lg:pt-0">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:px-6 md:px-12 lg:grid-cols-2 lg:gap-12 lg:px-20">
+        <div className="relative order-2 flex justify-center lg:order-1 lg:justify-start">
+          <div className="relative aspect-square w-full max-w-sm sm:max-w-md lg:h-[70vh] lg:max-w-xl lg:aspect-auto">
+            <img
               src={BackgroundImg}
-              className="w-full h-full object-contain object-center lg:object-left-bottom opacity-100" 
-              alt="AI Robot"
+              className="h-full w-full object-contain object-center lg:object-left-bottom"
+              alt="AI-powered systems"
             />
           </div>
         </div>
 
-        {/* Lado del Texto */}
-        <div className="flex flex-col items-start lg:items-end text-left lg:text-right order-1 lg:order-2">
-            <p className="text-zinc-900 dark:text-[#A3FF00] font-black text-[14px] tracking-[0.4em] uppercase mb-6">
-                Artificial Intelligence
-            </p>
+        <div className="order-1 flex flex-col items-start text-left lg:order-2 lg:items-end lg:text-right">
+          <p className="mb-5 text-xs font-black uppercase tracking-[0.28em] text-zinc-900 dark:text-[#A3FF00] sm:text-sm sm:tracking-[0.4em]">
+            Artificial Intelligence
+          </p>
 
-            <h1 className="text-zinc-900 dark:text-white text-5xl lg:text-[85px] font-serif leading-[0.9] tracking-tighter italic">
-                Build Smarter Solutions<br />
-                <span className="italic">with Real-Time Data</span>
-            </h1>
+          <h1 className="max-w-3xl text-4xl font-serif italic leading-none tracking-tight text-zinc-900 dark:text-white sm:text-5xl md:text-6xl lg:text-[85px]">
+            AI-Powered Systems Built for Smarter Operations
+          </h1>
+
+          <p className="mt-6 max-w-xl text-base leading-7 text-zinc-700 dark:text-white/70 sm:text-lg">
+            Streamline operations, automate repetitive processes, and enhance digital products with intelligent capabilities.
+          </p>
+
+          <Link to="/contact" className="mt-8 inline-flex min-h-11 items-center justify-center rounded-md bg-zinc-950 px-6 text-xs font-black uppercase tracking-[0.18em] text-white transition hover:bg-zinc-800 dark:bg-[#A3FF00] dark:text-zinc-950 dark:hover:bg-lime-300">
+            Build Smarter Systems
+          </Link>
         </div>
-
       </div>
 
-      {/* Franja de transición  */}
-      <div className="absolute bottom-0 right-0 w-full h-1 bg-white/10 z-20"></div>
+      <div className="absolute bottom-0 right-0 z-20 h-1 w-full bg-white/10" />
     </section>
-  );
+  )
 }

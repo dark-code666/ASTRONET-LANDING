@@ -12,7 +12,11 @@ export default function Outsourcing() {
         <FeatureBooking/>
         <ScrollingLogos/>
         <GridsBooking/>
-        <StartProyectOne/>
+        <StartProyectOne
+          title="Build Your Offshore Team"
+          description="Tell us about your operational challenges, product roadmap, or team requirements. We will help you define the right offshore structure, execution strategy, and specialist roles to support scalable growth."
+          buttonLabel="Book a Strategy Call"
+        />
         <ScrollHorOne/>
 
 

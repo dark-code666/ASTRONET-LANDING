@@ -1,68 +1,65 @@
-
 interface Feature {
-  title: string;
-  description: string;
-  dotColor: string; 
+  title: string
+  description: string
+  dotColor: string
 }
 
 const featureData: Feature[] = [
   {
-    title: "Seamless Booking Integrations",
-    description: "Seamlessly manage appointments with the booking software of your choice, or work with us to pinpoint the perfect solution for your business. We tailor each system to meet the unique needs of you and your team.",
-    dotColor: "bg-pink-300"
+    title: "Dedicated Product & Operations Teams",
+    description: "Build offshore teams aligned with your business goals, operational workflows, and long-term execution strategy.",
+    dotColor: "bg-pink-300",
   },
   {
-    title: "Real-Time Availability",
-    description: "Keep your clients informed with real-time availability updates. We can harness software to display up-to-the-minute openings, reducing double bookings and improving client satisfaction.",
-    dotColor: "bg-emerald-200"
+    title: "Embedded Engineering Teams",
+    description: "Scale your development capacity with dedicated developers, QA specialists, DevOps engineers, and technical leads integrated into your product workflows.",
+    dotColor: "bg-emerald-200",
   },
   {
-    title: "Automated Reminders",
-    description: "Reduce no-shows with automated reminders. Send timely notifications via email or SMS, helping clients remember their appointments and making your schedule more reliable.",
-    dotColor: "bg-zinc-300"
+    title: "Operational Support Teams",
+    description: "Improve operational efficiency with customer support specialists, operations assistants, appointment setters, and customer success teams.",
+    dotColor: "bg-zinc-300",
   },
   {
-    title: "Flexible Booking Websites",
-    description: "Offer your clients flexibility with multiple booking options. From recurring appointments to one-time bookings, our websites can support a variety of scheduling needs to cater to every client's preference.",
-    dotColor: "bg-pink-300"
+    title: "Strategic & Technical Roles",
+    description: "Access experienced professionals including software architects, fintech consultants, agile coaches, product strategists, and systems analysts.",
+    dotColor: "bg-pink-300",
   },
   {
-    title: "Secure Payment Integration",
-    description: "Streamline your payment process with secure online payment integration. Clients can easily pay for their appointments at the time of booking, ensuring a hassle-free experience for both parties.",
-    dotColor: "bg-emerald-200"
+    title: "Scalable Team Structures",
+    description: "From single-role specialists to fully managed offshore teams, we create scalable operational structures designed around your growth stage.",
+    dotColor: "bg-emerald-200",
   },
   {
-    title: "Comprehensive Analytics",
-    description: "Gain insights into your booking trends with comprehensive analytics. Track key metrics such as peak booking times, client preferences, and no-show rates to optimise your services and marketing strategies.",
-    dotColor: "bg-zinc-300"
-  }
-];
-
+    title: "Structured Communication & Execution",
+    description: "Every engagement is supported by clear workflows, reporting systems, and operational alignment to ensure reliable long-term execution.",
+    dotColor: "bg-zinc-300",
+  },
+  {
+    title: "Flexible Engagement Models",
+    description: "Choose between dedicated teams, project-based execution, or hybrid engagement models tailored to your operational needs.",
+    dotColor: "bg-pink-300",
+  },
+]
 
 export default function GridsBooking() {
   return (
-    <section className="bg-white py-16 px-6 sm:px-12 md:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16">
-        
-        {featureData.map((feature, index) => (
-          <div key={index} className="flex gap-4 items-start">
-            
-
-            <div className={`mt-2 w-3.5 h-3.5 rounded-full shrink-0 ${feature.dotColor}`}></div>
-          
+    <section className="bg-white px-4 py-14 dark:bg-[#050505] sm:px-6 sm:py-16 md:px-12 lg:px-20">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16">
+        {featureData.map((feature) => (
+          <div key={feature.title} className="flex items-start gap-4">
+            <div className={`mt-2 size-3.5 shrink-0 rounded-full ${feature.dotColor}`} />
             <div className="flex flex-col">
-              <h3 className="text-xl font-extrabold text-zinc-900 mb-3 tracking-tight leading-tight">
+              <h3 className="mb-3 text-xl font-extrabold leading-tight tracking-tight text-zinc-900 dark:text-white">
                 {feature.title}
               </h3>
-              <p className="text-zinc-500 text-sm leading-relaxed font-normal">
+              <p className="text-sm font-normal leading-relaxed text-zinc-500 dark:text-zinc-400">
                 {feature.description}
               </p>
             </div>
-            
           </div>
         ))}
-        
       </div>
     </section>
-  );
+  )
 }

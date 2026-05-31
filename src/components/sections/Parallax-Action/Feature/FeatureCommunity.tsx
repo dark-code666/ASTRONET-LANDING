@@ -1,42 +1,32 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom"
 
 export default function FeatureCommunity() {
   return (
-    <>
-
-      <section className="bg-white dark:bg-[#050505] py-10 px-10 md:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        
-    
-        <div className="max-w-md">
-          <h2 className="text-zinc-900 dark:text-white text-5xl lg:text-[42px] font-serif leading-[1.2] tracking-tighter italic">
-            Business owners are now looking to create their own community platforms to connect with their audience.
+    <section className="bg-white px-4 py-14 dark:bg-[#050505] sm:px-6 md:px-12 lg:px-20">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 md:grid-cols-2 lg:gap-12">
+        <div className="max-w-xl">
+          <h2 className="text-3xl font-serif italic leading-tight tracking-tight text-zinc-900 dark:text-white sm:text-4xl lg:text-[42px]">
+            Modern businesses need more than automation. They need intelligent systems that improve operations and support scalable growth.
           </h2>
         </div>
 
-        
         <div className="flex flex-col items-start space-y-8">
           <div className="space-y-6">
-            <p className="text-zinc-500 dark:text-zinc-400 text-lg leading-relaxed font-light">
-              Businesses and creators are turning to more specialised and bespoke community platforms to engage with their audience.
+            <p className="text-base font-light leading-relaxed text-zinc-500 dark:text-zinc-400 sm:text-lg">
+              Astronet develops AI-powered software solutions designed to streamline operations, automate repetitive processes, and enhance digital products with intelligent capabilities.
             </p>
-            <p className="text-zinc-500 dark:text-zinc-400 text-lg leading-relaxed font-light">
-              We recognise the importance of fostering meaningful connections and nurturing online communities. Our dynamic community platforms are designed to facilitate interaction, collaboration, and monetisation opportunities for businesses, coaches, tutors, and special interest groups alike.
+            <p className="text-base font-light leading-relaxed text-zinc-500 dark:text-zinc-400 sm:text-lg">
+              From AI agents and workflow automation to predictive systems and operational insights, we build practical AI integrations tailored to real business operations.
             </p>
           </div>
 
-
           <Link to="/contact">
-          <button className="px-10 py-4 border border-zinc-900 dark:border-white text-zinc-900 dark:text-white font-serif text-[18px] leading-[1.2] tracking-tighter  hover:bg-zinc-900 hover:text-white dark:hover:bg-[#A3FF00] dark:hover:text-zinc-950 transition-all duration-300">
-            Work with us
-          </button>
+            <button className="min-h-11 border border-zinc-900 px-7 py-3 text-base font-serif leading-tight tracking-tight text-zinc-900 transition-all duration-300 hover:bg-zinc-900 hover:text-white dark:border-white dark:text-white dark:hover:bg-[#A3FF00] dark:hover:text-zinc-950 sm:px-10 sm:py-4 sm:text-[18px]">
+              Build Smarter Systems
+            </button>
           </Link>
-
         </div>
-
       </div>
-      </section>
-     
-    </>
+    </section>
   )
 }

@@ -13,7 +13,11 @@ export default function IA() {
      <FeatureCommunity/>
      <ScrollingLogos />
      <GridsCommunity />
-     <StartProyectOne />
+     <StartProyectOne
+       title="Start Your AI Project"
+       description="Tell us about your operational challenges, workflows, or product goals. Our team will help you identify the right AI-powered systems and execution strategy to improve efficiency and scale operations."
+       buttonLabel="Book a Strategy Call"
+     />
       <ScrollHorOne/>
 
    </>

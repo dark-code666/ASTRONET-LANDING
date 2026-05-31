@@ -8,8 +8,8 @@ export default function SectionOne() {
   const [activeImage, setActiveImage] = useState(imgCompany);
 
   return (
-    <section className="h-full w-full bg-[#0d1110] flex items-center">
-      <div className="w-full px-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+    <section className="flex min-h-[calc(100svh-5rem)] w-full items-center bg-[#0d1110] py-16 lg:h-full lg:py-0">
+      <div className="grid w-full grid-cols-1 items-center gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-12 lg:px-12">
         
         {/* BLOQUE DE TEXTO */}
         <Link to="/whatwedo/Software-Development">
@@ -22,15 +22,15 @@ export default function SectionOne() {
             <span className="text-xs">↗</span> HOW WE DO
           </p>
 
-          <h2 className="text-white text-6xl lg:text-7xl font-serif mb-6 leading-[1.1] tracking-tight transform transition-transform duration-700 ease-out group-hover:translate-x-6">
+          <h2 className="mb-5 text-4xl font-serif leading-[1.08] tracking-tight text-white transition-transform duration-700 ease-out group-hover:translate-x-0 sm:text-5xl lg:mb-6 lg:text-7xl lg:group-hover:translate-x-6">
             Software <br/> Development.
           </h2>
 
-          <p className="text-zinc-500 max-w-sm mb-8 text-lg leading-relaxed transform transition-transform duration-700 ease-out delay-75 group-hover:translate-x-6">
+          <p className="mb-7 max-w-sm text-base leading-relaxed text-zinc-500 transition-transform delay-75 duration-700 ease-out group-hover:translate-x-0 sm:text-lg lg:mb-8 lg:group-hover:translate-x-6">
             Scalable digital products designed to launch faster, support growth, and reduce operational friction.
           </p>
           
-          <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10 transform transition-transform duration-700 ease-out delay-100 group-hover:translate-x-8">
+          <div className="mb-8 grid grid-cols-1 gap-x-6 gap-y-4 transition-transform delay-100 duration-700 ease-out group-hover:translate-x-0 sm:grid-cols-2 lg:mb-10 lg:gap-x-8 lg:group-hover:translate-x-8">
             {['FULL-STACK SYSTEMS', 'CLOUD INFRASTRUCTURE', 'API INTEGRATIONS', 'MOBILE SOLUTIONS'].map(item => (
               <div key={item} className="flex items-center gap-3 text-[10px] font-black uppercase text-zinc-400">
                 <span className="text-[#A3FF00]">✔</span> {item}
@@ -38,7 +38,7 @@ export default function SectionOne() {
             ))}
           </div>
            
-          <button className="px-10 py-4 bg-transparent border border-white/20 text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-[#A3FF00] hover:text-black transition-all transform group-hover:translate-x-6 duration-700">
+          <button className="rounded-lg border border-white/20 bg-transparent px-8 py-4 text-[10px] font-black uppercase tracking-widest text-white transition-all duration-700 hover:bg-[#A3FF00] hover:text-black lg:px-10 lg:group-hover:translate-x-6">
             Find out more
           </button>
         </div>
@@ -48,7 +48,7 @@ export default function SectionOne() {
         <div className="relative flex flex-col items-center">
           <div className="w-full h-48 bg-zinc-900 rounded-t-full mt-24 opacity-0 blur-3xl absolute bottom-0" />
           
-          <div className="relative z-10 w-full max-w-lg transform -perspective-1000 rotate-x-12 rotate-y-[-5deg] transition-all duration-1000">
+          <div className="relative z-10 w-full max-w-sm transition-all duration-1000 sm:max-w-md lg:max-w-lg lg:-perspective-1000 lg:rotate-x-12 lg:rotate-y-[-5deg]">
             <div className="relative rounded-lg overflow-hidden shadow-2xl border-0 border-zinc-800">
                <img 
                 src={activeImage} 

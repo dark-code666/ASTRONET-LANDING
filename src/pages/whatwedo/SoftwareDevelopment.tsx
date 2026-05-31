@@ -11,7 +11,11 @@ export default function SoftwareDevelopment() {
         <FeatureCompany/>
         <ScrollingLogos/>
         <GridsCompany/>
-        <StartProyectOne/>
+        <StartProyectOne
+          title="Start Your Software Project"
+          description="Tell us what you are building. Our team will help you define the right product architecture, execution strategy, and offshore team structure to launch faster and scale with confidence."
+          buttonLabel="Book a Strategy Call"
+        />
 
          
 

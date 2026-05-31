@@ -1,38 +1,32 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom"
 
 export default function FeatureCompany() {
   return (
-    <section className="bg-white dark:bg-[#050505] py-10 px-10 md:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        
-    
-        <div className="max-w-md">
-          <h2 className="text-zinc-900 dark:text-white text-5xl lg:text-[42px] font-serif leading-[1.2] tracking-tighter italic">
-            In today’s digital world, having a strong online presence is crucial for the success of your business.
+    <section className="bg-white px-4 py-14 dark:bg-[#050505] sm:px-6 md:px-12 lg:px-20">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 md:grid-cols-2 lg:gap-12">
+        <div className="max-w-xl">
+          <h2 className="text-3xl font-serif italic leading-tight tracking-tight text-zinc-900 dark:text-white sm:text-4xl lg:text-[42px]">
+            Astronet develops custom software solutions designed around your business goals, operational workflows, and long-term scalability.
           </h2>
         </div>
 
-        
         <div className="flex flex-col items-start space-y-8">
           <div className="space-y-6">
-            <p className="text-zinc-500 dark:text-zinc-400 text-lg leading-relaxed font-light">
-              Your website serves as the face of your brand, often being the first point of contact for potential customers. At Astronet, we understand the importance of making a lasting impression.
+            <p className="text-base font-light leading-relaxed text-zinc-500 dark:text-zinc-400 sm:text-lg">
+              From SaaS platforms and internal business systems to ecommerce infrastructure and customer-facing applications, we build reliable software engineered for performance and execution.
             </p>
-            <p className="text-zinc-500 dark:text-zinc-400 text-lg leading-relaxed font-light">
-              That’s why we specialise in creating custom company websites tailored to reflect the unique identity and values of your business. Whether you’re a small startup or a well-established company, our team works closely with you to ensure that your website not only looks great but also effectively communicates your message to your target audience.
+            <p className="text-base font-light leading-relaxed text-zinc-500 dark:text-zinc-400 sm:text-lg">
+              Whether you are launching a new product, modernizing operations, or expanding engineering capacity, our offshore product teams help you execute faster without the overhead of internal hiring.
             </p>
           </div>
 
-
           <Link to="/contact">
-          <button className="px-10 py-4 border border-zinc-900 dark:border-white text-zinc-900 dark:text-white font-serif text-[18px] leading-[1.2] tracking-tighter  hover:bg-zinc-900 hover:text-white dark:hover:bg-[#A3FF00] dark:hover:text-zinc-950 transition-all duration-300">
-            Work with us
-          </button>
+            <button className="min-h-11 border border-zinc-900 px-7 py-3 text-base font-serif leading-tight tracking-tight text-zinc-900 transition-all duration-300 hover:bg-zinc-900 hover:text-white dark:border-white dark:text-white dark:hover:bg-[#A3FF00] dark:hover:text-zinc-950 sm:px-10 sm:py-4 sm:text-[18px]">
+              Build Your Product
+            </button>
           </Link>
-
         </div>
-
       </div>
     </section>
-  );
+  )
 }

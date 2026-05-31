@@ -8,12 +8,12 @@ export default function SectionTwo() {
   const [activeImage, setActiveImage] = useState(imgEcommerce);
 
   return (
-    <section className="h-screen w-full bg-[#838e83] flex items-center justify-center overflow-hidden">
-      <div className="mx-auto max-w-6xl w-full px-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
+    <section className="flex min-h-[calc(100svh-5rem)] w-full items-center justify-center overflow-hidden bg-[#838e83] py-16 lg:h-screen lg:py-0">
+      <div className="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:px-12">
         
         {/* LADO IZQUIERDO */}
         <div className="relative flex justify-center lg:justify-start">
-          <div className="relative w-full max-w-[550px] aspect-square flex items-center justify-center">
+          <div className="relative flex aspect-square w-full max-w-sm items-center justify-center sm:max-w-md lg:max-w-[550px]">
             <img 
               src={activeImage} 
               key={activeImage} 
@@ -35,15 +35,15 @@ export default function SectionTwo() {
               ↗ HOW WE DO
             </p>
             
-            <h2 className="text-white text-6xl lg:text-7xl font-serif mb-6 leading-tight transition-transform duration-700 group-hover:-translate-x-6">
+            <h2 className="mb-5 text-4xl font-serif leading-tight text-white transition-transform duration-700 group-hover:translate-x-0 sm:text-5xl lg:mb-6 lg:text-7xl lg:group-hover:-translate-x-6">
               eCommerce <br/> Platforms.
             </h2>
 
-            <p className="text-zinc-100 max-w-sm mb-8 text-lg transition-transform duration-700 delay-75 group-hover:-translate-x-8">
+            <p className="mb-7 max-w-sm text-base text-zinc-100 transition-transform delay-75 duration-700 group-hover:translate-x-0 sm:text-lg lg:mb-8 lg:group-hover:-translate-x-8">
               High-performance ecommerce platforms designed to streamline operations, improve customer experience, and support scalable growth.
             </p>
             
-            <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-10 transition-transform duration-700 delay-100 group-hover:-translate-x-10">
+            <div className="mb-8 grid grid-cols-1 gap-x-6 gap-y-4 transition-transform delay-100 duration-700 group-hover:translate-x-0 sm:grid-cols-2 lg:mb-10 lg:gap-x-8 lg:group-hover:-translate-x-10">
               {[
                 'Fashion & apparel', 'Home & garden', 'Electronics', 
                 'Health & wellness', 'Cosmetics', 'Food & beverage'
@@ -54,7 +54,7 @@ export default function SectionTwo() {
               ))}
             </div>
 
-            <button className="px-10 py-4 border border-white/20 text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-[#A3FF00] hover:text-black transition-all group-hover:-translate-x-8">
+            <button className="rounded-lg border border-white/20 px-8 py-4 text-[10px] font-black uppercase tracking-widest text-white transition-all hover:bg-[#A3FF00] hover:text-black lg:px-10 lg:group-hover:-translate-x-8">
               Find out more
             </button>
           </div>
