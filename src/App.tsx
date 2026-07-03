@@ -21,7 +21,7 @@ import About from './pages/About';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ASTRONET-LANDING/">
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
