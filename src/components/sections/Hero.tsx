@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import Button from '../ui/Button'
+import { useState } from 'react'
+import ViewOurWork from './ViewOurWork'
 
 export type HeroProps = {
   eyebrow?: string
@@ -13,6 +15,7 @@ export default function Hero({
   description =
     'Astronet helps companies execute digital products with dedicated offshore engineering teams, AI-powered systems, and scalable operational support built for long-term growth.',
 }: HeroProps) {
+  const [isViewOurWorkOpen, setIsViewOurWorkOpen] = useState(false)
   return (
     <section className="relative overflow-hidden bg-white dark:bg-[#050505]">
       <div className="absolute inset-0 -z-10">
@@ -42,9 +45,9 @@ export default function Hero({
               </Button>
             </Link>
 
-            <Button href="/whatwedo#parallax-container" variant="ghost" className="h-11 w-full justify-center border border-zinc-200 bg-white px-6 text-xs font-black uppercase tracking-tight text-zinc-950 transition-all hover:border-zinc-300 hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white dark:hover:border-zinc-700 dark:hover:bg-zinc-800 sm:w-auto sm:text-sm">
+            <button onClick={() => setIsViewOurWorkOpen(true)} className="h-11 w-full justify-center border border-zinc-200 bg-white px-6 text-xs font-black uppercase tracking-tight text-zinc-950 transition-all hover:border-zinc-300 hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-white dark:hover:border-zinc-700 dark:hover:bg-zinc-800 sm:w-auto sm:text-sm rounded-lg flex items-center">
               View our Work
-            </Button>
+            </button>
           </div>
 
           <div className="mt-10 grid gap-3 text-xs font-medium text-zinc-700 dark:text-zinc-300 sm:flex sm:flex-wrap sm:gap-6">
@@ -91,6 +94,9 @@ export default function Hero({
           </div>
         </div>
       </div>
+
+      {/* View Our Work Modal */}
+      <ViewOurWork isOpen={isViewOurWorkOpen} onClose={() => setIsViewOurWorkOpen(false)} />
     </section>
   )
 }
