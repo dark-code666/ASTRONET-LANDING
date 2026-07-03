@@ -31,7 +31,7 @@ export default function ViewOurWork({ isOpen, onClose }: ViewOurWorkProps) {
         revenue: "$890k",
         clients: "1,850+"
       },
-      image: "/imagenes/juridico-platform.png",
+      image: `${import.meta.env.BASE_URL}imagenes/juridico-platform.png`,
       category: "LEGAL MARKETPLACE"
     },
     {
@@ -43,7 +43,7 @@ export default function ViewOurWork({ isOpen, onClose }: ViewOurWorkProps) {
         revenue: "$1.2M",
         clients: "500+"
       },
-      image: "/imagenes/abogados-panel.png",
+      image: `${import.meta.env.BASE_URL}imagenes/abogados-panel.png`,
       category: "LAWYERS"
     },
     {
@@ -55,7 +55,7 @@ export default function ViewOurWork({ isOpen, onClose }: ViewOurWorkProps) {
         revenue: "$4.7M",
         clients: "250+"
       },
-      image: "/imagenes/reportes-financieros.png",
+      image: `${import.meta.env.BASE_URL}imagenes/reportes-financieros.png`,
       category: "FINANCE"
     }
   ];
