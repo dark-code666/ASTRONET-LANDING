@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function StartProyect() {
-  const recipientEmail = 'talaveram508@gmail.com';
+  const recipientEmail = 'Info@astronet.dev';
 
   const [formData, setFormData] = useState({
     'First Name': '',
