@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, Calendar} from 'lucide-react';
+import { Mail, Calendar} from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -27,25 +27,14 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-10">
-            {/* WhatsApp */}
-            <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4">
-              <div className="p-3 rounded-xl bg-zinc-950/5 group-hover:bg-[#A3FF00]/10 transition-colors dark:bg-white/5">
-                <MessageCircle size={20} className="text-zinc-950 group-hover:text-[#A3FF00] dark:text-white" />
-              </div>
-              <div>
-                <p className="text-[9px] font-black tracking-widest text-zinc-500 uppercase">WhatsApp</p>
-                <p className="text-sm font-bold uppercase tracking-tight text-zinc-950 dark:text-white">ASTRONET</p>
-              </div>
-            </a>
-
             {/* Email */}
-            <a href="mailto:hello@harryking.studio" className="group flex items-center gap-4">
+            <a href="mailto:Info@astronet.dev" className="group flex items-center gap-4">
               <div className="p-3 rounded-xl bg-zinc-950/5 group-hover:bg-[#A3FF00]/10 transition-colors dark:bg-white/5">
                 <Mail size={20} className="text-zinc-950 group-hover:text-[#A3FF00] dark:text-white" />
               </div>
               <div>
                 <p className="text-[9px] font-black tracking-widest text-zinc-500 uppercase">Email</p>
-                <p className="text-sm font-bold uppercase tracking-tight text-zinc-950 dark:text-white">ASTRONET@GMAIL.COM</p>
+                <p className="text-sm font-bold uppercase tracking-tight text-zinc-950 dark:text-white">INFO@ASTRONET.DEV</p>
               </div>
             </a>
 
