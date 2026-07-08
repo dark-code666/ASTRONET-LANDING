@@ -47,11 +47,11 @@ export default function InfoSegment() {
 
       <div className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 sm:pb-24 lg:pb-32">
         <div className="relative grid min-h-[520px] grid-cols-1 overflow-hidden rounded-[2rem] bg-[#0d1110] lg:grid-cols-10 lg:rounded-[2.5rem]">
-          <div className="relative h-[320px] lg:col-span-4 lg:h-auto">
+          <div className="relative h-[320px] lg:col-span-4 lg:h-auto bg-[#0a0f0d]">
             <img
-              src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=800&q=80"
-              className="absolute inset-0 h-full w-full object-cover opacity-80 grayscale"
-              alt="Astronet team"
+              src="/imagenes/juridico.png"
+              className="absolute inset-0 h-full w-full object-contain object-center"
+              alt="Juridiconect project"
             />
             <div className="absolute bottom-8 left-6 sm:left-10">
               <p className="font-serif text-2xl text-white">Astronet Team</p>
@@ -61,7 +61,7 @@ export default function InfoSegment() {
 
           <div className="flex flex-col justify-center p-6 sm:p-10 lg:col-span-6 lg:p-20">
             <div className="mb-6 flex items-center gap-3">
-              <span className="font-bold text-[#A3FF00]">↗</span>
+              <img src="/imagenes/logo.png" alt="Astronet logo" className="h-8 w-8 rounded-md object-contain" />
               <p className="text-[10px] font-black uppercase tracking-[0.35em] text-[#A3FF00]">
                 Astronet
               </p>
