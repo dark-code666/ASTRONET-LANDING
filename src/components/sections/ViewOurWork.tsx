@@ -25,7 +25,7 @@ export default function ViewOurWork({ isOpen, onClose }: ViewOurWorkProps) {
     {
       id: 1,
       title: "Comprehensive Legal Platform",
-      description: "JurídicoNet connects clients with verified lawyers. A complete platform to manage legal cases from one place.",
+      description: "Juridiconect connects clients with verified lawyers. A complete platform to manage legal cases from one place.",
       stats: {
         cases: "2,450+",
         revenue: "$890k",
@@ -67,7 +67,7 @@ export default function ViewOurWork({ isOpen, onClose }: ViewOurWorkProps) {
         <div className="flex justify-between items-center mb-16 max-w-6xl mx-auto">
           <div>
             <h2 className="text-white text-5xl md:text-6xl font-serif mb-4">
-              JurídicoNet <span className="text-[#FFA500]">in Action</span>
+              Juridiconect <span className="text-[#FFA500]">in Action</span>
             </h2>
             <p className="text-white/60 text-lg">
               The platform that revolutionizes access to legal services
@@ -151,10 +151,10 @@ export default function ViewOurWork({ isOpen, onClose }: ViewOurWorkProps) {
         <div className="mt-20 max-w-6xl mx-auto">
           <div className="bg-gradient-to-r from-[#FFA500]/10 to-orange-600/10 border border-[#FFA500]/30 rounded-xl p-12">
             <h3 className="text-white text-3xl font-serif mb-6">
-              About <span className="text-[#FFA500]">JurídicoNet</span>
+              About <span className="text-[#FFA500]">Juridiconect</span>
             </h3>
             <p className="text-white/70 text-lg leading-relaxed mb-8">
-              JurídicoNet is the leading platform connecting clients with verified lawyers. We simplify access to legal services, allowing anyone to find the perfect lawyer for their case quickly, transparently and reliably.
+              Juridiconect is the leading platform connecting clients with verified lawyers. We simplify access to legal services, allowing anyone to find the perfect lawyer for their case quickly, transparently and reliably.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
